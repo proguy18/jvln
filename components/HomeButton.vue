@@ -1,5 +1,7 @@
 <template>
-  <button class="font-rounded text-black text-xl font-thin">JVLN</button>
+  <button class="text-xl font-thin text-black font-rounded">
+    <slot></slot>
+  </button>
 </template>
 
 <script>

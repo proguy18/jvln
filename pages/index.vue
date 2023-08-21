@@ -1,21 +1,24 @@
 <template>
   <div class="min-h-screen bg-background">
     <!-- Header -->
-    <AppHeader />
+    <div class="h-screen bg-green-400">
+      <Navbar />
+    </div>
+
 
     <!-- Main Content -->
-    <main class="container mx-auto p-4">
+    <main class="container p-4 mx-auto">
       <!-- You can start building your main content here. -->
     </main>
   </div>
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   components: {
-    AppHeader,
+    Navbar,
   },
 }
 </script>

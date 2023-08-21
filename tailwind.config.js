@@ -1,5 +1,13 @@
 module.exports = {
-    purge: [],
+    mode: 'jit',
+    purge: [
+      './index.html', 
+      './src/**/*.{vue,js,ts,jsx,tsx}',
+      './components/**/*.vue',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+  ],
+  
     darkMode: false,
     theme: {
       extend: {
