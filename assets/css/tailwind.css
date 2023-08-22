@@ -2,6 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
 @font-face {
   font-family: 'M PLUS Rounded 1c';
   src: url('~assets/fonts/MPLUSRounded1c-Thin.ttf') format('truetype');
