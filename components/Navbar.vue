@@ -8,10 +8,17 @@
       </HomeButton>
       <!-- Second Row: Links -->
       <ul class="flex space-x-40">
-        <li v-for="(link, index) in Links" :key="index">
-          <a :href="link.link" class="text-xl"
+        <li
+          v-for="(link, index) in Links"
+          :key="index"
+        >
+          <a
+            :href="link.link"
+            class="text-xl"
             :class="hoveredIndices.length > 0 ? (hoveredIndices.includes(index) ? 'text-white' : 'text-gray-500') : 'text-white'"
-            @mouseover="hoverLink(index)" @mouseleave="leaveLink(index)">
+            @mouseover="hoverLink(index)"
+            @mouseleave="leaveLink(index)"
+          >
             {{ link.name }}
           </a>
         </li>
@@ -26,14 +33,26 @@
         JVLN
       </HomeButton>
       <!-- Menu Toggle Icon -->
-      <span @click="MenuOpen()" class="text-4xl cursor-pointer">
+      <span
+        @click="MenuOpen()"
+        class="text-4xl cursor-pointer"
+      >
         <i :class="[open ? 'bi bi-x' : 'bi bi-list']"></i>
       </span>
       <!-- Dropdown Menu for Links -->
-      <ul class="absolute w-full px-10 pb-1 duration-200 ease-linear bg-gray-900" style="top: 5.75rem;"
-        :class="[open ? 'right-0' : 'right-[-100%]']">
-        <li v-for="(link, index) in Links" :key="index">
-          <a :href="link.link" class="text-xl text-white">
+      <ul
+        class="absolute w-full px-10 pb-1 duration-200 ease-linear bg-gray-900"
+        style="top: 5.75rem;"
+        :class="[open ? 'right-0' : 'right-[-100%]']"
+      >
+        <li
+          v-for="(link, index) in Links"
+          :key="index"
+        >
+          <a
+            :href="link.link"
+            class="text-xl text-white"
+          >
             {{ link.name }}
           </a>
         </li>
