@@ -1,9 +1,8 @@
 <template>
   <div class="min-h-screen bg-background">
     <!-- Header -->
-    <div class="h-screen bg-green-400">
-      <Navbar />
-    </div>
+    <Navbar />
+
 
 
     <!-- Main Content -->

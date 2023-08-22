@@ -5,13 +5,14 @@
       <!-- First Row: Home Button -->
       <HomeButton class="mb-4">JVLN</HomeButton>
       <!-- Second Row: Links -->
-      <ul class="flex space-x-4">
+      <ul class="flex space-x-40">
         <li v-for="(link, index) in Links" :key="index">
-          <a :href="link.link" class="text-xl hover:text-green-500">{{ link.name }}</a>
+          <a :href="link.link" class="text-xl"
+            :class="hoveredIndices.length > 0 ? (hoveredIndices.includes(index) ? 'text-white' : 'text-gray-500') : 'text-white'"
+            @mouseover="hoverLink(index)" @mouseleave="leaveLink(index)">{{ link.name }}</a>
         </li>
       </ul>
     </div>
-
     <!-- Mobile View -->
     <div class="flex items-center justify-between md:hidden">
       <!-- Spacer for left side to balance the menu icon on the right -->
@@ -23,10 +24,10 @@
         <i :class="[open ? 'bi bi-x' : 'bi bi-list']"></i>
       </span>
       <!-- Dropdown Menu for Links -->
-      <ul class="absolute w-full px-10 pb-10 duration-200 ease-linear bg-gray-900 top-14"
+      <ul class="absolute w-full px-10 pb-1 duration-200 ease-linear bg-gray-900" style="top: 5.75rem;"
         :class="[open ? 'right-0' : 'right-[-100%]']">
         <li class="my-6" v-for="(link, index) in Links" :key="index">
-          <a :href="link.link" class="text-xl hover:text-green-500">{{ link.name }}</a>
+          <a :href="link.link" class="text-xl text-white">{{ link.name }}</a>
         </li>
       </ul>
     </div>
@@ -45,21 +46,31 @@ export default {
   },
   setup() {
     const open = ref(false)
+    const hoveredIndices = ref([])
     const Links = [
-      { name: 'Home', link: '#' },
       { name: 'Products', link: '#' },
       { name: 'About Us', link: '#' },
       { name: 'Contact Us', link: '#' },
     ]
-
     function MenuOpen() {
       open.value = !open.value
     }
-
+    function hoverLink(index) {
+      hoveredIndices.value.push(index)
+    }
+    function leaveLink(index) {
+      const idx = hoveredIndices.value.indexOf(index)
+      if (idx > -1) {
+        hoveredIndices.value.splice(idx, 1)
+      }
+    }
     return {
       open,
       Links,
-      MenuOpen
+      MenuOpen,
+      hoveredIndices,
+      hoverLink,
+      leaveLink
     }
   },
 }
