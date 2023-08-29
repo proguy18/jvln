@@ -6,7 +6,7 @@
     <main class="container p-4 mx-auto">
       <div class="sections-list">
         <div
-          class="container flex flex-col items-center gap-4 px-4 pt-8 mx-auto mt-8 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
+          class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
         >
           <!-- Banner/Image -->
           <div class="md:col-span-3 lg:col-span-8">
@@ -24,10 +24,10 @@
             class="text-left md:col-span-3 lg:col-span-4 col-content px-section"
           >
             <ContentComponent
-              :heading="contentData.heading"
-              :description="contentData.description"
-              :ctaText="contentData.ctaText"
-              :ctaLink="contentData.ctaLink"
+              :heading="introductionData.heading"
+              :description="introductionData.description"
+              :ctaText="introductionData.ctaText"
+              :ctaLink="introductionData.ctaLink"
             />
           </div>
         </div>
@@ -35,13 +35,13 @@
       <!-- Hero Image -->
       <div class="mb-6">
         <!-- <img src="@/assets/hero-image.jpg" alt="Romantic Candle Setting" class="w-full mb-4 rounded-md shadow-lg"> -->
-        <p class="text-lg text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <p class="pt-12 my-2 text-4xl text-center font-mplus1p text-primary">
+          BEST SELLERS
         </p>
       </div>
       <!-- Product Showcase -->
       <section
-        class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-2 lg:grid-cols-4"
+        class="grid grid-cols-2 gap-6 mb-6 md:grid-cols-2 lg:grid-cols-4"
       >
         <MainProduct
           v-for="product in products"
@@ -56,6 +56,31 @@
           Lorem ipsum dolor sit amet, consectetur elit.
         </p>
       </div>
+      <div
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
+      >
+        <!-- Banner/Image -->
+        <div class="col-span-full md:col-span-6 lg:col-span-8">
+          <BannerComponent
+            :mobileImage="bannerData.mobileImage"
+            :tabletImage="bannerData.tabletImage"
+            :laptopImage="bannerData.laptopImage"
+            :desktopImage="bannerData.desktopImage"
+            :defaultImage="bannerData.defaultImage"
+            :bannerLink="bannerData.link"
+          />
+        </div>
+        <!-- Content -->
+        <div
+          class="text-left col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
+        >
+          <ContentComponent
+            :heading="storyData.heading"
+            contentClass="custom-class-to-center-content"
+          />
+        </div>
+      </div>
+
       <!-- Testimonials -->
       <section class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-2">
         <div v-for="testimonial in testimonials" :key="testimonial.id">
@@ -67,26 +92,34 @@
           <p class="text-center">{{ testimonial.quote }}</p>
         </div>
       </section>
+
       <!-- About Us -->
       <section class="my-12">
-        <h2 class="mb-4 text-2xl font-bold">About Lorem Ipsum</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          facilisis urna. Praesent ac gravida libero. Donec non odio justo.
-        </p>
-      </section>
-      <!-- Featured Products -->
-      <section class="my-12">
-        <h2 class="mb-4 text-2xl font-bold">Lorem Ipsum Products</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Product cards here -->
-        </div>
-      </section>
-      <!-- Reviews -->
-      <section class="my-12">
-        <h2 class="mb-4 text-2xl font-bold">Lorem Ipsum Reviews</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <!-- Review cards or quotes here -->
+        <div
+          class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
+        >
+          <!-- Content -->
+          <div
+            class="text-left md:col-span-3 lg:col-span-4 col-content px-section"
+          >
+            <ContentComponent
+              :heading="aboutUsData.heading"
+              :description="aboutUsData.description"
+              :ctaText="aboutUsData.ctaText"
+              :ctaLink="aboutUsData.ctaLink"
+            />
+          </div>
+          <!-- Banner/Image -->
+          <div class="md:col-span-3 lg:col-span-8">
+            <BannerComponent
+              :mobileImage="bannerData.mobileImage"
+              :tabletImage="bannerData.tabletImage"
+              :laptopImage="bannerData.laptopImage"
+              :desktopImage="bannerData.desktopImage"
+              :defaultImage="bannerData.defaultImage"
+              :bannerLink="bannerData.link"
+            />
+          </div>
         </div>
       </section>
       <!-- Newsletter Signup -->
@@ -104,17 +137,12 @@
           </button>
         </form>
       </section>
-      <!-- Blog or Updates -->
-      <section class="my-12">
-        <h2 class="mb-4 text-2xl font-bold">Lorem Ipsum Journal</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Blog cards or update snippets here -->
-        </div>
-      </section>
       <!-- Contact Information -->
       <section class="my-12">
-        <h2 class="mb-4 text-2xl font-bold">Lorem Ipsum Contact</h2>
-        <p>
+        <h2 class="mb-4 text-2xl font-bold font-mplus1p text-primary">
+          FOLLOW US
+        </h2>
+        <p text-primary>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
           facilisis urna.
         </p>
@@ -155,12 +183,24 @@ export default {
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
         // link: '/#'
       },
-      contentData: {
-        heading: 'Lorem Ipsum Dolor',
+      introductionData: {
+        heading: 'THE GOOD, THE BEAUTIFUL, THE USEFUL',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna.',
+          'This is the philosophy of La Droguerie, a collection of household products designed to elevate the everyday in a sustainable way.',
         ctaText: 'DISCOVER MORE',
         // ctaLink: '/your-cta-link'
+      },
+      storyData: {
+        heading: 'METICULOUSLY HANDCRAFTED',
+        // description: '',
+        // ctaText: 'DISCOVER MORE',
+        // ctaLink: '/your-cta-link'
+      },
+      aboutUsData: {
+        heading: 'A PASSION FOR LOVE',
+        description: 'Dolce dest decorum est Lorem Ipsum quick brown fox',
+        ctaText: 'LEARN MORE',
+        // ctaLink: '#'
       },
       products: [
         // Add your product details here
