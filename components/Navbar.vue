@@ -55,9 +55,9 @@ export default {
     const open = ref(false)
     const hoveredIndices = ref([])
     const Links = [
-      { name: 'Products', link: '#' },
-      { name: 'About Us', link: '#' },
-      { name: 'Contact Us', link: '#' },
+      { name: 'PRODUCTS', link: '#' },
+      { name: 'ABOUT US', link: '#' },
+      { name: 'CONTACT US', link: '#' },
     ]
 
     function MenuOpen() {
