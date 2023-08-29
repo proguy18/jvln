@@ -11,12 +11,12 @@
           <!-- Banner/Image -->
           <div class="md:col-span-3 lg:col-span-8">
             <BannerComponent
-              :mobileImage="bannerData.mobileImage"
-              :tabletImage="bannerData.tabletImage"
-              :laptopImage="bannerData.laptopImage"
-              :desktopImage="bannerData.desktopImage"
-              :defaultImage="bannerData.defaultImage"
-              :bannerLink="bannerData.link"
+              :mobile-image="bannerData.mobileImage"
+              :tablet-image="bannerData.tabletImage"
+              :laptop-image="bannerData.laptopImage"
+              :desktop-image="bannerData.desktopImage"
+              :default-image="bannerData.defaultImage"
+              :banner-link="bannerData.link"
             />
           </div>
           <!-- Content -->
@@ -26,8 +26,8 @@
             <ContentComponent
               :heading="introductionData.heading"
               :description="introductionData.description"
-              :ctaText="introductionData.ctaText"
-              :ctaLink="introductionData.ctaLink"
+              :cta-text="introductionData.ctaText"
+              :cta-link="introductionData.ctaLink"
             />
           </div>
         </div>
@@ -46,7 +46,7 @@
         <MainProduct
           v-for="product in products"
           :key="product.id"
-          :mainProduct="product"
+          :main-product="product"
         />
       </section>
       <!-- Behind the Scenes -->
@@ -62,12 +62,12 @@
         <!-- Banner/Image -->
         <div class="col-span-full md:col-span-6 lg:col-span-8">
           <BannerComponent
-            :mobileImage="bannerData.mobileImage"
-            :tabletImage="bannerData.tabletImage"
-            :laptopImage="bannerData.laptopImage"
-            :desktopImage="bannerData.desktopImage"
-            :defaultImage="bannerData.defaultImage"
-            :bannerLink="bannerData.link"
+            :mobile-image="bannerData.mobileImage"
+            :tablet-image="bannerData.tabletImage"
+            :laptop-image="bannerData.laptopImage"
+            :desktop-image="bannerData.desktopImage"
+            :default-image="bannerData.defaultImage"
+            :banner-link="bannerData.link"
           />
         </div>
         <!-- Content -->
@@ -76,7 +76,7 @@
         >
           <ContentComponent
             :heading="storyData.heading"
-            contentClass="custom-class-to-center-content"
+            content-class="custom-class-to-center-content"
           />
         </div>
       </div>
@@ -105,19 +105,19 @@
             <ContentComponent
               :heading="aboutUsData.heading"
               :description="aboutUsData.description"
-              :ctaText="aboutUsData.ctaText"
-              :ctaLink="aboutUsData.ctaLink"
+              :cta-text="aboutUsData.ctaText"
+              :cta-link="aboutUsData.ctaLink"
             />
           </div>
           <!-- Banner/Image -->
           <div class="md:col-span-3 lg:col-span-8">
             <BannerComponent
-              :mobileImage="bannerData.mobileImage"
-              :tabletImage="bannerData.tabletImage"
-              :laptopImage="bannerData.laptopImage"
-              :desktopImage="bannerData.desktopImage"
-              :defaultImage="bannerData.defaultImage"
-              :bannerLink="bannerData.link"
+              :mobile-image="bannerData.mobileImage"
+              :tablet-image="bannerData.tabletImage"
+              :laptop-image="bannerData.laptopImage"
+              :desktop-image="bannerData.desktopImage"
+              :default-image="bannerData.defaultImage"
+              :banner-link="bannerData.link"
             />
           </div>
         </div>

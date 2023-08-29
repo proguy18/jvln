@@ -11,12 +11,12 @@
           <!-- Banner/Image -->
           <div class="md:col-span-3 lg:col-span-8">
             <BannerComponent
-              :mobileImage="bannerData.mobileImage"
-              :tabletImage="bannerData.tabletImage"
-              :laptopImage="bannerData.laptopImage"
-              :desktopImage="bannerData.desktopImage"
-              :defaultImage="bannerData.defaultImage"
-              :bannerLink="bannerData.link"
+              :mobile-image="bannerData.mobileImage"
+              :tablet-image="bannerData.tabletImage"
+              :laptop-image="bannerData.laptopImage"
+              :desktop-image="bannerData.desktopImage"
+              :default-image="bannerData.defaultImage"
+              :banner-link="bannerData.link"
             />
           </div>
           <!-- Content -->
@@ -26,8 +26,8 @@
             <ContentComponent
               :heading="contentData.heading"
               :description="contentData.description"
-              :ctaText="contentData.ctaText"
-              :ctaLink="contentData.ctaLink"
+              :cta-text="contentData.ctaText"
+              :cta-link="contentData.ctaLink"
             />
           </div>
         </div>
@@ -46,7 +46,7 @@
         <MainProduct
           v-for="product in products"
           :key="product.id"
-          :mainProduct="product"
+          :main-product="product"
         />
       </section>
 
