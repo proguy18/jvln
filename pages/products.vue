@@ -1,69 +1,23 @@
 <template>
-  <div class="min-h-screen bg-background">
-    <!-- Header -->
-    <Navbar />
-    <!-- Main Content -->
-    <main class="container p-4 mx-auto">
-      <!-- Hero Image -->
-      <div class="mb-6">
-        <!-- <img src="@/assets/hero-image.jpg" alt="Romantic Candle Setting" class="w-full mb-4 rounded-md shadow-lg"> -->
-        <p class="pt-12 my-2 text-4xl text-center font-mplus1p text-primary">
-          OUR CUSTOMLY CURATED PRODUCTS
-        </p>
-      </div>
-      <!-- Product Showcase -->
-      <section
-        class="grid grid-cols-2 gap-6 mb-6 md:grid-cols-2 lg:grid-cols-4"
-      >
-        <MainProduct
-          v-for="product in products"
-          :key="product.id"
-          :main-product="product"
-        />
-      </section>
-      <!-- Newsletter Signup -->
-      <section class="p-6 my-12 bg-gray-200 rounded-md">
-        <h2 class="mb-4 text-2xl font-bold">Lorem Ipsum Newsletter</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <form class="mt-4">
-          <input
-            type="email"
-            placeholder="Your email address"
-            class="p-2 mr-2 rounded-md"
-          />
-          <button type="submit" class="p-2 text-white bg-blue-500 rounded-md">
-            Subscribe
-          </button>
-        </form>
-      </section>
-      <!-- Contact Information -->
-      <section class="my-12">
-        <h2 class="mb-4 text-2xl font-bold font-mplus1p text-primary">
-          FOLLOW US
-        </h2>
-        <p text-primary>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          facilisis urna.
-        </p>
-      </section>
-      <!-- Social Media Links -->
-      <section class="flex my-12 space-x-4">
-        <!-- Social media icons linking to profiles -->
-      </section>
-    </main>
-  </div>
+  <!-- Header -->
+  <!-- Main Content -->
+  <main class="container p-4 mx-auto">
+    <div class="px-4 mx-auto mt-5">
+      <ProductShowcase
+        :products="products"
+        title="Lorem Ipsum"
+        description="A collection of our most popular items."
+      />
+    </div>
+  </main>
 </template>
 <script>
-import Navbar from '@/components/Navbar.vue';
 // import BannerComponent from '@/components/BannerComponent.vue';
 // import ContentComponent from '@/components/ContentComponent.vue';
-import MainProduct from '@/components/MainProduct.vue';
 export default {
   components: {
     // BannerComponent,
     // ContentComponent,
-    Navbar,
-    MainProduct,
   },
   data() {
     return {

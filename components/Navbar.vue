@@ -37,7 +37,7 @@
       </span>
       <!-- Dropdown Menu for Links -->
       <ul
-        class="absolute w-full px-10 pb-1 duration-200 ease-linear bg-gray-900"
+        class="absolute z-50 w-full px-10 pb-2 duration-200 ease-linear bg-gray-900"
         style="top: 5.75rem"
         :class="[open ? 'right-0' : 'right-[-100%]']"
       >
