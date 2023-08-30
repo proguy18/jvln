@@ -3,7 +3,7 @@
     <!-- Desktop View -->
     <div class="hidden md:flex md:flex-col md:items-center md:justify-center">
       <!-- First Row: Home Button -->
-      <HomeButton class="mb-4"> JVLN </HomeButton>
+      <HomeButton class="mb-4" />
       <!-- Second Row: Links -->
       <ul class="flex space-x-40">
         <li v-for="(link, index) in Links" :key="index">
@@ -30,7 +30,7 @@
       <!-- Spacer for left side to balance the menu icon on the right -->
       <div class="w-10 text-4xl"></div>
       <!-- Home Button -->
-      <HomeButton> JVLN </HomeButton>
+      <HomeButton />
       <!-- Menu Toggle Icon -->
       <span class="text-4xl cursor-pointer" @click="MenuOpen()">
         <i :class="[open ? 'bi bi-x' : 'bi bi-list']"></i>
@@ -64,7 +64,7 @@ export default {
     const open = ref(false);
     const hoveredIndices = ref([]);
     const Links = [
-      { name: 'PRODUCTS', link: '#' },
+      { name: 'PRODUCTS', link: '/products' },
       { name: 'ABOUT US', link: '#' },
       { name: 'CONTACT US', link: '#' },
     ];
