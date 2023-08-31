@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-4 overflow-x-auto">
+  <div class="flex justify-between space-x-4 overflow-x-auto">
     <div
       v-for="image in images"
       :key="image"
@@ -9,7 +9,7 @@
       <img
         :src="image"
         alt="Product Thumbnail"
-        class="object-cover w-24 h-24 rounded-md shadow"
+        class="object-cover w-24 h-32 rounded-md shadow"
       />
     </div>
   </div>

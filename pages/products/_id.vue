@@ -1,35 +1,82 @@
 <template>
-  <div class="p-6 bg-white">
-    <!-- Product Gallery -->
-    <div class="flex flex-col items-center space-y-4">
-      <img
-        :src="selectedImage"
-        alt="Selected Product Image"
-        class="object-cover w-full rounded-md shadow-lg h-96"
-      />
-      <ProductGallery
-        :images="product.images"
-        @selectImage="updateSelectedImage"
-      />
-    </div>
-
-    <!-- Product Info -->
-    <div class="mt-8 space-y-4">
-      <h1 class="text-2xl font-bold text-primary font-mplus1p">
-        {{ product.name }}
-      </h1>
-      <span class="block text-xl text-primary font-lato">{{
-        product.type
-      }}</span>
-      <p class="text-onPrimary font-lato">{{ product.description }}</p>
-      <div class="text-2xl font-semibold text-primary font-lato">
-        {{ product.price }} €
-      </div>
-      <button
-        class="w-full py-2 bg-blue-500 rounded-md text-primary hover:bg-blue-600 font-lato"
+  <!-- Main Container -->
+  <div class="container p-4 mx-auto">
+    <div class="px-4 mx-auto mt-5">
+      <!-- Main Product Container -->
+      <div
+        class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4"
       >
-        Add to Bag
-      </button>
+        <!-- Left Side: Image + Gallery -->
+        <div class="relative space-y-4 md:w-1/2">
+          <!-- Image Wrapper (for portrait cropping) -->
+          <div
+            class="relative w-full max-w-md overflow-hidden rounded-md shadow-lg h-[500px] mb-4"
+          >
+            <!-- Actual Product Image -->
+            <img
+              :src="selectedImage"
+              alt="Selected Product Image"
+              class="object-cover w-full h-full"
+            />
+            <!-- Previous Image Arrow -->
+            <div
+              @click="prevImage"
+              class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 left-4 bg-opacity-40 backdrop-blur-md"
+              style="user-select: none"
+            >
+              <img
+                src="~@/assets/svgs/arrow-left.svg"
+                alt="Left Arrow"
+                class="w-full h-full"
+              />
+            </div>
+            <!-- Next Image Arrow -->
+            <div
+              @click="nextImage"
+              class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 right-4 bg-opacity-40 backdrop-blur-md"
+              style="user-select: none"
+            >
+              <img
+                src="~@/assets/svgs/arrow-right.svg"
+                alt="Right Arrow"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+          <!-- Product Gallery Component -->
+          <ProductGallery
+            :images="product.images"
+            @selectImage="updateSelectedImage"
+          />
+        </div>
+        <!-- Right Side: Texts and Details -->
+        <div class="flex flex-col justify-between space-y-4 md:w-1/2 h-128">
+          <div>
+            <!-- Product Name -->
+            <h1 class="text-2xl font-bold text-primary font-mplus1p">
+              {{ product.name }}
+            </h1>
+            <!-- Product Type -->
+            <span class="block text-xl text-primary font-lato">{{
+              product.type
+            }}</span>
+            <!-- Product Description -->
+            <p class="text-onPrimary font-lato">{{ product.description }}</p>
+          </div>
+          <div>
+            <!-- Product Price -->
+            <div class="text-2xl font-semibold text-primary font-lato">
+              {{ product.price }} €
+            </div>
+            <!-- Add to Bag Button -->
+            <button
+              class="w-full py-2 bg-blue-500 rounded-md text-primary hover:bg-blue-600 font-lato"
+            >
+              Add to Bag
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -50,6 +97,20 @@ export default {
   methods: {
     updateSelectedImage(image) {
       this.selectedImage = image;
+    },
+    prevImage() {
+      const currentIndex = this.product.images.indexOf(this.selectedImage);
+      if (currentIndex > 0) {
+        this.selectedImage = this.product.images[currentIndex - 1];
+      }
+    },
+    nextImage() {
+      const currentIndex = this.product.images.indexOf(this.selectedImage);
+      if (currentIndex < this.product.images.length - 1) {
+        this.selectedImage = this.product.images[currentIndex + 1];
+      } else {
+        this.selectedImage = this.product.images[0]; // Cycle back to the first image
+      }
     },
   },
   asyncData({ params }) {
