@@ -161,7 +161,7 @@ export default {
           name: 'Lorem Ipsum One',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
-          link: '#',
+          link: '/products/1',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
           description: 'Lorem ipsum dolor sit amet.',
@@ -171,7 +171,7 @@ export default {
           name: 'Lorem Ipsum Two',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
-          link: '#',
+          link: '/products/2',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Consectetur adipiscing elit.',
@@ -181,7 +181,7 @@ export default {
           name: 'Lorem Ipsum Three',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg',
-          link: '#',
+          link: '/products/3',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Sed sit amet facilisis urna.',
@@ -191,7 +191,7 @@ export default {
           name: 'Lorem Ipsum Four',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg',
-          link: '#',
+          link: '/products/4',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Praesent ac gravida libero.',

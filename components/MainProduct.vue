@@ -1,6 +1,6 @@
 <template>
   <div class="mainProduct">
-    <a :href="mainProduct.link">
+    <nuxt-link :to="mainProduct.link">
       <div class="relative w-full h-64 overflow-hidden rounded-md shadow-lg">
         <!-- Base Image -->
         <div
@@ -16,7 +16,7 @@
       </div>
       <p class="mt-2 text-left text-primary">{{ mainProduct.name }}</p>
       <p class="mt-1 text-left text-onPrimary">{{ mainProduct.description }}</p>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 

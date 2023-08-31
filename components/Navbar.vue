@@ -7,8 +7,8 @@
       <!-- Second Row: Links -->
       <ul class="flex space-x-40">
         <li v-for="(link, index) in Links" :key="index">
-          <a
-            :href="link.link"
+          <nuxt-link
+            :to="link.link"
             class="text-xl"
             :class="
               hoveredIndices.length > 0
@@ -21,7 +21,7 @@
             @mouseleave="leaveLink(index)"
           >
             {{ link.name }}
-          </a>
+          </nuxt-link>
         </li>
       </ul>
     </div>
@@ -42,9 +42,9 @@
         :class="[open ? 'right-0' : 'right-[-100%]']"
       >
         <li v-for="(link, index) in Links" :key="index">
-          <a :href="link.link" class="text-xl text-white">
+          <nuxt-link :to="link.link" class="text-xl text-white">
             {{ link.name }}
-          </a>
+          </nuxt-link>
         </li>
       </ul>
     </div>

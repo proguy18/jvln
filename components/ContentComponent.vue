@@ -9,13 +9,13 @@
     </p>
 
     <!-- CTA with Lato font -->
-    <a
+    <nuxt-link
       v-if="ctaText && ctaLink"
-      :href="ctaLink"
+      :to="ctaLink"
       class="px-4 py-2 bg-transparent border rounded font-lato border-primary text-primary hover:bg-onPrimary"
     >
       {{ ctaText }}
-    </a>
+    </nuxt-link>
   </div>
 </template>
 

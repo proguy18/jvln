@@ -1,0 +1,36 @@
+<template>
+  <div class="flex space-x-4 overflow-x-auto">
+    <div
+      v-for="image in images"
+      :key="image"
+      @click="selectImage(image)"
+      class="cursor-pointer"
+    >
+      <img
+        :src="image"
+        alt="Product Thumbnail"
+        class="object-cover w-24 h-24 rounded-md shadow"
+      />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    images: {
+      type: Array,
+      required: true,
+    },
+  },
+  methods: {
+    selectImage(image) {
+      this.$emit('selectImage', image);
+    },
+  },
+};
+</script>
+
+<style>
+/* You can add any additional styles if needed */
+</style>
