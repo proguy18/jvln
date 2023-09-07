@@ -180,19 +180,8 @@ export default {
       products: [
         // Add your product details here
         {
-          id: 1,
-          name: 'Disneyland Couple',
-          image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
-          link: '#',
-          hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
-          description:
-            'Magic in every flicker. Relive our favorite Disney show.',
-        },
-        {
-          id: 2,
-          name: 'Baberoserini',
+          id: 'baberini',
+          name: 'Baberini',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           link: '#',
@@ -202,8 +191,8 @@ export default {
             "A tribute to Baberini. Roses encapsulate love's essence.",
         },
         {
-          id: 3,
-          name: 'Baberoni',
+          id: 'baberino',
+          name: 'baberino',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg',
           link: '#',
@@ -213,7 +202,7 @@ export default {
             "Our unisex signature. Saffron and cedar's elegant dance.",
         },
         {
-          id: 4,
+          id: 'mangonada',
           name: 'Mangonada',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg',
@@ -222,11 +211,22 @@ export default {
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Tropical delight in a flame. Sweet mango serenades.',
         },
+        {
+          id: 'disney-couple',
+          name: 'Disneyland Couple',
+          image:
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+          link: '#',
+          hoverImage:
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+          description:
+            'Magic in every flicker. Relive our favorite Disney show.',
+        },
         // ... more products
       ],
       testimonials: [
         // Add your testimonial details here
-        // { id: 1, name: 'Joey & Evelin', image: '@/assets/testimonial1.jpg', quote: 'We love these candles!' },
+        // { id: "baberini", name: 'Joey & Evelin', image: '@/assets/testimonial1.jpg', quote: 'We love these candles!' },
         // ... more testimonials
       ],
     };

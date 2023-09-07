@@ -58,41 +58,41 @@ export default {
       products: [
         // Add your product details here
         {
-          id: 1,
+          id: 'baberini',
           name: 'Lorem Ipsum One',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
-          link: '/products/1',
+          link: '/products/baberini',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
           description: 'Lorem ipsum dolor sit amet.',
         },
         {
-          id: 2,
+          id: 'baberino',
           name: 'Lorem Ipsum Two',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
-          link: '/products/2',
+          link: '/products/baberino',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Consectetur adipiscing elit.',
         },
         {
-          id: 3,
+          id: 'mangonada',
           name: 'Lorem Ipsum Three',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg',
-          link: '/products/3',
+          link: '/products/mangonada',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Sed sit amet facilisis urna.',
         },
         {
-          id: 4,
+          id: 'disney-couple',
           name: 'Lorem Ipsum Four',
           image:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg',
-          link: '/products/4',
+          link: '/products/disney-couple',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
           description: 'Praesent ac gravida libero.',
@@ -102,7 +102,7 @@ export default {
       testimonials: [
         // Add your testimonial details here
         // {
-        //     id: 1,
+        //     id: "baberini",
         //     name: 'Lorem Ipsum',
         //     image: '@/assets/testimonial1.jpg',
         //     quote: 'Lorem ipsum dolor sit amet!',
