@@ -25,3 +25,40 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Initial states */
+.start-at-left {
+  transform: translateX(-50%); /* Adjusted from -100% */
+  opacity: 0;
+  /* animation: slide-right 5s forwards; */
+  transition: 3s;
+}
+
+.start-at-right {
+  transform: translateX(50%); /* Adjusted from 100% */
+  opacity: 0;
+  /* animation: slide-left 5s forwards; */
+  transition: 3s;
+}
+
+.ease-up {
+  transform: translateY(50px);
+  opacity: 30;
+  transition: transform 5s, opacity 100;
+}
+
+/* Animated states */
+.slide-to-right {
+  transform: translateX(0);
+  opacity: 30;
+}
+
+.slide-to-left {
+  transform: translateX(0);
+  opacity: 30;
+}
+
+.ease-in {
+  transform: translateY(0);
+  opacity: 30;
+}

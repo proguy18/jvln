@@ -64,10 +64,30 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and
+      typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took a galley of type
+      and scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with
+      desktop publishing software like Aldus PageMaker including versions of
+      Lorem Ipsum. Why do we use it? It is a long established fact that a reader
+      will be distracted by the readable content of a page when looking at its
+      layout. The point of using Lorem Ipsum is that it has a more-or-less
+      normal distribution of letters, as opposed to using 'Content here, content
+      here', making it look like readable English. Many desktop publishing
+      packages and web page editors now use Lorem Ipsum as their default model
+      text, and a search for 'lorem ipsum' will uncover many web sites still in
+      their infancy. Various versions have evolved over the years, sometimes by
+      accident, sometimes on purpose (injected humour and the like). "
+    </div>
     <div
       class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
     >
-      <div class="col-span-full md:col-span-6 lg:col-span-8">
+      <div class="start-at-left col-span-full md:col-span-6 lg:col-span-8">
         <BannerComponent
           :mobile-image="banners[0].mobileImage"
           :tablet-image="banners[0].tabletImage"
@@ -78,7 +98,7 @@
         />
       </div>
       <div
-        class="text-left col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
+        class="text-left ease-up col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
       >
         <ContentComponent
           :heading="product.storyData.heading"
@@ -92,7 +112,7 @@
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
       >
         <div
-          class="text-left md:col-span-3 lg:col-span-4 col-content px-section"
+          class="text-left ease-up md:col-span-3 lg:col-span-4 col-content px-section"
         >
           <ContentComponent
             :heading="product.substoryData.heading"
@@ -102,7 +122,7 @@
           />
         </div>
         <!-- Here, you should use the first banner from the banners array or define another data property for this banner -->
-        <div class="md:col-span-3 lg:col-span-8">
+        <div class="start-at-right md:col-span-3 lg:col-span-8">
           <BannerComponent
             :mobile-image="banners[1].mobileImage"
             :tablet-image="banners[1].tabletImage"
@@ -257,6 +277,11 @@ export default {
       // Set the first image as the default selected image
     };
   },
+
+  mounted() {
+    this.setupObserver();
+  },
+
   methods: {
     updateSelectedImage(image) {
       this.selectedImage = image;
@@ -274,6 +299,35 @@ export default {
       } else {
         this.selectedImage = this.product.images[0];
       }
+    },
+    setupObserver() {
+      const options = {
+        root: null,
+        threshold: 1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(
+            `Element: ${entry.target.className}, Intersection Ratio: ${entry.intersectionRatio}`,
+          );
+
+          if (entry.intersectionRatio === 1) {
+            // Adjust this value as needed
+            if (entry.target.classList.contains('start-at-left')) {
+              entry.target.classList.add('slide-to-right');
+            } else if (entry.target.classList.contains('start-at-right')) {
+              entry.target.classList.add('slide-to-left');
+            }
+          }
+        });
+      }, options);
+
+      document
+        .querySelectorAll('.start-at-left, .start-at-right, .ease-up')
+        .forEach((el) => {
+          observer.observe(el);
+        });
     },
   },
 };
