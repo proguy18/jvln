@@ -37,7 +37,7 @@
       </span>
       <!-- Dropdown Menu for Links -->
       <ul
-        class="absolute z-50 w-full px-10 pb-2 transition-transform duration-200 ease-linear transform bg-gray-900"
+        class="fixed z-50 w-full pb-2 transition-transform duration-200 ease-linear transform bg-gray-900"
         style="top: 5.75rem"
         :class="[open ? 'translate-x-0' : 'translate-x-full']"
       >
