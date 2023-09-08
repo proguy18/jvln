@@ -156,48 +156,46 @@ export default {
         images: [
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
         ],
         banners: [
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201634/IMG_8617-crop_rsf6dr.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8617_poprwz.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694201634/IMG_8617-crop_rsf6dr.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8617_poprwz.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694201634/IMG_8617-crop_rsf6dr.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201634/IMG_8617-crop_rsf6dr.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201634/IMG_8617-crop_rsf6dr.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201634/IMG_8617-crop_rsf6dr.jpg',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201629/IMG_8618-crop_uonibx.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8618_yvnv5q.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694201629/IMG_8618-crop_uonibx.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8618_yvnv5q.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694201629/IMG_8618-crop_uonibx.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201629/IMG_8618-crop_uonibx.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201629/IMG_8618-crop_uonibx.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694201629/IMG_8618-crop_uonibx.jpg',
             // link: '/#'
           },
           {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/logo_baberini_cl75qk.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/logo_baberini_cl75qk.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/logo_baberini_cl75qk.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/logo_baberini_cl75qk.png',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
             desktopImage:
@@ -240,9 +238,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199359/ezgif.com-optimize_s2kqu3.gif',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199359/ezgif.com-optimize_s2kqu3.gif',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             desktopImage:
@@ -255,9 +253,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199023/00112-5_wf3dnn.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694199023/00112-5_wf3dnn.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199023/00112-5_wf3dnn.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694199023/00112-5_wf3dnn.png',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
             desktopImage:
@@ -270,9 +268,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198038/logo_baberoni_nrruzr.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694198038/logo_baberoni_nrruzr.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198038/logo_baberoni_nrruzr.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694198038/logo_baberoni_nrruzr.png',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
             desktopImage:
@@ -316,9 +314,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198044/logo_disneylandcouple_egeeds.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198044/logo_disneylandcouple_egeeds.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694198044/logo_disneylandcouple_egeeds.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198044/logo_disneylandcouple_egeeds.png',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694198044/logo_disneylandcouple_egeeds.png',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198044/logo_disneylandcouple_egeeds.png',
             desktopImage:
@@ -331,9 +329,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8421_dxbdgt.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8421_dxbdgt.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694200135/IMG-8421_dxbdgt.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8421_dxbdgt.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694200135/IMG-8421_dxbdgt.jpg',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8421_dxbdgt.jpg',
             desktopImage:
@@ -346,9 +344,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8408_ho53tx.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8408_ho53tx.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694200135/IMG-8408_ho53tx.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8408_ho53tx.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694200135/IMG-8408_ho53tx.jpg',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8408_ho53tx.jpg',
             desktopImage:
@@ -391,9 +389,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8529_fejshc.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8529_fejshc.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694170416/IMG_8529_fejshc.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8529_fejshc.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694170416/IMG_8529_fejshc.jpg',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8529_fejshc.jpg',
             desktopImage:
@@ -406,9 +404,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8530_kh4gtj.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8530_kh4gtj.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694170416/IMG_8530_kh4gtj.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8530_kh4gtj.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694170416/IMG_8530_kh4gtj.jpg',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8530_kh4gtj.jpg',
             desktopImage:
@@ -421,9 +419,9 @@ export default {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694170417/IMG_8556_lln21x.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_300,c_thumb,g_auto/v1694170417/IMG_8556_lln21x.jpg',
             laptopImage:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
             desktopImage:
@@ -434,21 +432,21 @@ export default {
           },
         ],
         storyData: {
-          heading: 'TROPICAL WHISPERS',
+          heading: 'PRECISION IN EVERY GRAIN',
           description:
-            "The tantalizing scent of mango chamoy fills the room, a hint of the exotic treat she's been longing for. This handcrafted candle is a promise, a reminder that even if the world doesn't offer what we desire, love finds a way to bring it closer.",
+            "Every candle begins with meticulous attention to detail. The act of weighing the wax isn't just a step in the process; it's a testament to the precision and care I invest in every moment we share. Just as I ensure the perfect amount of wax, I strive to make every moment with you perfect.",
         },
 
         substoryData: {
-          heading: 'HANDCRAFTED CRAVINGS',
+          heading: 'COLORS OF AFFECTION',
           description:
-            "Every Mangonada candle is a labor of love, capturing the essence of her recent obsession. It's more than just a scent; it's a handcrafted journey of flavors and memories, a testament to the lengths love will go to fulfill a wish.",
+            "The melted wax, infused with fragrance and taking on the hue of your favorite color, pink, is more than just a mixture. It's a blend of dedication, passion, and memories. Every drop signifies the lengths I'd go to, ensuring that even the smallest details resonate with your essence.",
         },
 
         finalStoryData: {
-          heading: 'FLAME OF FULFILLMENT',
+          heading: 'A MONUMENT OF MOMENTS',
           description:
-            "This isn't just about mango chamoy. It's about a burning desire, a wish, and the love that strives to make it come true. Every flicker is a step closer to her dream, every scent a reminder of my unwavering commitment to our shared passions.",
+            'The tower of five candles is not just a display of my craftsmanship but a symbol of the countless hours, the dedication, and the love poured into each creation. Every layer, every scent, every hue is a chapter of our story, handcrafted with you at its heart.',
         },
       },
       // ... Add more products in the same format as above if needed ...
@@ -462,7 +460,7 @@ export default {
       selectedImage:
         product && product.images
           ? product.images[0]
-          : 'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-6.jpg',
+          : 'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
       // Set the first image as the default selected image
     };
   },
