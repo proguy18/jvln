@@ -7,14 +7,16 @@
     <Nuxt />
 
     <!-- Footer -->
-    <footer class="bg-gray-50">
+    <footer class="bg-background">
       <!-- Unified footer color -->
       <!-- Newsletter Signup -->
       <section class="p-6 my-12">
         <h2 class="mb-4 text-2xl font-bold text-primary">
           Join Our Newsletter
         </h2>
-        <p>Stay updated with our latest news and stories.</p>
+        <p class="text-primary">
+          Stay updated with our latest news and stories.
+        </p>
         <form class="mt-4">
           <input
             type="email"
@@ -28,7 +30,8 @@
       </section>
 
       <!-- Contact Information -->
-      <section class="p-6 my-12">
+      <section class="p-6">
+        <!-- <section> -->
         <h2 class="mb-4 text-2xl font-bold font-mplus1p text-primary">
           FOLLOW US
         </h2>
@@ -40,7 +43,7 @@
             rel="noopener noreferrer"
             class="text-blue-600 hover:text-blue-800"
           >
-            <i class="fab fa-facebook-f"></i>
+            <font-awesome-icon icon="fa-brands fa-facebook-f" />
           </a>
           <a
             href="#"
@@ -48,7 +51,7 @@
             rel="noopener noreferrer"
             class="text-blue-500 hover:text-blue-700"
           >
-            <i class="fab fa-twitter"></i>
+            <font-awesome-icon icon="fa-brands fa-twitter" />
           </a>
           <a
             href="#"
@@ -56,7 +59,7 @@
             rel="noopener noreferrer"
             class="text-red-600 hover:text-red-800"
           >
-            <i class="fab fa-instagram"></i>
+            <font-awesome-icon icon="fa-brands fa-instagram" />
           </a>
           <!-- Add more icons as needed -->
         </div>

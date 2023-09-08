@@ -21,10 +21,14 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/tailwind.css', 'font-awesome/css/font-awesome.css'],
+  css: [
+    '~/assets/css/tailwind.css',
+    'font-awesome/css/font-awesome.css',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/fontawesome.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

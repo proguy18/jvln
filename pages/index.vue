@@ -184,40 +184,40 @@ export default {
           id: 'baberini',
           name: 'BABERINI',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
           link: '/products/baberini',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
           description: 'Lorem ipsum dolor sit amet.',
         },
         {
           id: 'baberino',
           name: 'BABERINO',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
           link: '/products/baberino',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
           description: 'Consectetur adipiscing elit.',
         },
         {
           id: 'mangonada',
           name: 'MANGONADA',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
           link: '/products/mangonada',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
           description: 'Sed sit amet facilisis urna.',
         },
         {
           id: 'disney-couple',
           name: 'DISNEYLAND COUPLE',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
           link: '/products/disney-couple',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
           description: 'Praesent ac gravida libero.',
         },
         // ... more products
