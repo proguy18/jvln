@@ -41,10 +41,10 @@
   transition: 3s;
 }
 
-.ease-up {
-  transform: translateY(50px);
-  opacity: 30;
-  transition: transform 5s, opacity 100;
+.start-at-bottom {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: 3s;
 }
 
 /* Animated states */
@@ -58,7 +58,7 @@
   opacity: 100;
 }
 
-.ease-in {
+.slide-up {
   transform: translateY(0);
   opacity: 100;
 }

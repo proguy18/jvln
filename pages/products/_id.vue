@@ -147,7 +147,7 @@
           />
         </div>
         <div
-          class="text-left ease-up col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
+          class="text-left start-at-bottom col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
         >
           <ContentComponent
             :heading="product.storyData.heading"
@@ -163,7 +163,7 @@
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
       >
         <div
-          class="text-left ease-up md:col-span-3 lg:col-span-4 col-content px-section"
+          class="text-left start-at-bottom md:col-span-3 lg:col-span-4 col-content px-section"
         >
           <ContentComponent
             :heading="product.substoryData.heading"
@@ -393,13 +393,15 @@ export default {
               entry.target.classList.add('slide-to-right');
             } else if (entry.target.classList.contains('start-at-right')) {
               entry.target.classList.add('slide-to-left');
+            } else if (entry.target.classList.contains('start-at-bottom')) {
+              entry.target.classList.add('slide-up');
             }
           }
         });
       }, options);
 
       document
-        .querySelectorAll('.start-at-left, .start-at-right, .ease-up')
+        .querySelectorAll('.start-at-left, .start-at-right, .start-at-bottom')
         .forEach((el) => {
           observer.observe(el);
         });
