@@ -7,12 +7,12 @@
       <!-- Banner/Image -->
       <div class="md:col-span-3 lg:col-span-8">
         <BannerComponent
-          :mobile-image="bannerData.mobileImage"
-          :tablet-image="bannerData.tabletImage"
-          :laptop-image="bannerData.laptopImage"
-          :desktop-image="bannerData.desktopImage"
-          :default-image="bannerData.defaultImage"
-          :banner-link="bannerData.link"
+          :mobile-image="bannerData1.mobileImage"
+          :tablet-image="bannerData1.tabletImage"
+          :laptop-image="bannerData1.laptopImage"
+          :desktop-image="bannerData1.desktopImage"
+          :default-image="bannerData1.defaultImage"
+          :banner-link="bannerData1.link"
         />
       </div>
       <!-- Content -->
@@ -33,25 +33,18 @@
         description="A collection of our most popular items."
       />
     </div>
-    <!-- Behind the Scenes -->
-    <div class="mb-6">
-      <!-- <img src="@/assets/joey-crafting.jpg" alt="Joey Crafting Candles" class="w-full mb-4 rounded-md shadow-lg"> -->
-      <p class="text-lg text-center">
-        Lorem ipsum dolor sit amet, consectetur elit.
-      </p>
-    </div>
     <div
       class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
     >
       <!-- Banner/Image -->
       <div class="col-span-full md:col-span-6 lg:col-span-8">
         <BannerComponent
-          :mobile-image="bannerData.mobileImage"
-          :tablet-image="bannerData.tabletImage"
-          :laptop-image="bannerData.laptopImage"
-          :desktop-image="bannerData.desktopImage"
-          :default-image="bannerData.defaultImage"
-          :banner-link="bannerData.link"
+          :mobile-image="bannerData2.mobileImage"
+          :tablet-image="bannerData2.tabletImage"
+          :laptop-image="bannerData2.laptopImage"
+          :desktop-image="bannerData2.desktopImage"
+          :default-image="bannerData2.defaultImage"
+          :banner-link="bannerData2.link"
         />
       </div>
       <!-- Content -->
@@ -96,12 +89,12 @@
         <!-- Banner/Image -->
         <div class="md:col-span-3 lg:col-span-8">
           <BannerComponent
-            :mobile-image="bannerData.mobileImage"
-            :tablet-image="bannerData.tabletImage"
-            :laptop-image="bannerData.laptopImage"
-            :desktop-image="bannerData.desktopImage"
-            :default-image="bannerData.defaultImage"
-            :banner-link="bannerData.link"
+            :mobile-image="bannerData3.mobileImage"
+            :tablet-image="bannerData3.tabletImage"
+            :laptop-image="bannerData3.laptopImage"
+            :desktop-image="bannerData3.desktopImage"
+            :default-image="bannerData3.defaultImage"
+            :banner-link="bannerData3.link"
           />
         </div>
       </div>
@@ -120,19 +113,49 @@ export default {
   },
   data() {
     return {
-      bannerData: {
+      bannerData1: {
         image:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
         mobileImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
         tabletImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
         laptopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
         desktopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
         defaultImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+        // link: '/#'
+      },
+      bannerData2: {
+        image:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+        mobileImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+        tabletImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+        laptopImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+        desktopImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+        defaultImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+        // link: '/#'
+      },
+      bannerData3: {
+        image:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+        mobileImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+        tabletImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+        laptopImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+        desktopImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+        defaultImage:
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
         // link: '/#'
       },
       introductionData: {
@@ -158,42 +181,42 @@ export default {
         // Add your product details here
         {
           id: 'baberini',
-          name: 'Lorem Ipsum One',
+          name: 'BABERINI',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
           link: '/products/baberini',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
           description: 'Lorem ipsum dolor sit amet.',
         },
         {
           id: 'baberino',
-          name: 'Lorem Ipsum Two',
+          name: 'BABERINO',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
           link: '/products/baberino',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
           description: 'Consectetur adipiscing elit.',
         },
         {
           id: 'mangonada',
-          name: 'Lorem Ipsum Three',
+          name: 'MANGONADA',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
           link: '/products/mangonada',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
           description: 'Sed sit amet facilisis urna.',
         },
         {
           id: 'disney-couple',
-          name: 'Lorem Ipsum Four',
+          name: 'DISNEYLAND COUPLE',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
           link: '/products/disney-couple',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
           description: 'Praesent ac gravida libero.',
         },
         // ... more products

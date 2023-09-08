@@ -205,10 +205,9 @@ export default {
         // type: 'Type 1',
         description:
           "A tribute to Baberini. Roses encapsulate love's essence. This candle melds various rose varieties, creating an authentic and timeless rose aroma that transports you to a blossoming garden.",
-        price: '56',
         images: [
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
@@ -278,18 +277,167 @@ export default {
       },
       {
         id: 'baberino',
-        name: 'Product 2',
+        name: 'BABERINO',
         // type: 'Type 2',
         description: 'Description for Product 2',
-        price: '60',
         images: [
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
         ],
         banners: [
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            // link: '/#'
+          },
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            // link: '/#'
+          },
+        ],
+        storyData: {
+          heading: 'SYMPHONY OF NATURE',
+          description:
+            "Dive into the heart of a rose garden where various varieties intertwine. Each lends its unique note, crafting a symphony of nature's finest roses. Just like our love, every detail is handcrafted, every note carefully chosen.",
+        },
+        substoryData: {
+          heading: 'HANDCRAFTED DEVOTION',
+          description:
+            "Every Baberini candle is handcrafted, just like the moments we've shared. From the delicate whispers of budding petals to the robust fragrances of full blooms, each scent is a testament to the time and care I've poured into our journey together.",
+        },
+        finalStoryData: {
+          heading: 'A FLAME OF LOVE',
+          description:
+            "The harmonious blend of the Baberini candle isn't just about roses. It's about a love that burns bright and true. Each flicker of the flame is a reminder of my unwavering love for you, handcrafted and designed with you at its heart.",
+        },
+      },
+      {
+        id: 'disney-couple',
+        name: 'DISNEYLAND COUPLE',
+        // type: 'Type 1',
+        description: 'DISNEY DESCRIPTUON',
+        images: [
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8608_n3aghi.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8612_csqua3.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8611_tcc710.jpg',
+        ],
+        banners: [
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+            // link: '/#'
+          },
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            // link: '/#'
+          },
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            // link: '/#'
+          },
+        ],
+        storyData: {
+          heading: 'SYMPHONY OF NATURE',
+          description:
+            "Dive into the heart of a rose garden where various varieties intertwine. Each lends its unique note, crafting a symphony of nature's finest roses. Just like our love, every detail is handcrafted, every note carefully chosen.",
+        },
+        substoryData: {
+          heading: 'HANDCRAFTED DEVOTION',
+          description:
+            "Every Baberini candle is handcrafted, just like the moments we've shared. From the delicate whispers of budding petals to the robust fragrances of full blooms, each scent is a testament to the time and care I've poured into our journey together.",
+        },
+        finalStoryData: {
+          heading: 'A FLAME OF LOVE',
+          description:
+            "The harmonious blend of the Baberini candle isn't just about roses. It's about a love that burns bright and true. Each flicker of the flame is a reminder of my unwavering love for you, handcrafted and designed with you at its heart.",
+        },
+      },
+      {
+        id: 'mangonada',
+        name: 'MANGONADA',
+        // type: 'Type 1',
+        description: 'mangonada description',
+        images: [
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
+        ],
+        banners: [
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+            // link: '/#'
+          },
           {
             image:
               'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',

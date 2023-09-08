@@ -59,42 +59,42 @@ export default {
         // Add your product details here
         {
           id: 'baberini',
-          name: 'Lorem Ipsum One',
+          name: 'BABERINI',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
           link: '/products/baberini',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
           description: 'Lorem ipsum dolor sit amet.',
         },
         {
           id: 'baberino',
-          name: 'Lorem Ipsum Two',
+          name: 'BABERINO',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
           link: '/products/baberino',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
           description: 'Consectetur adipiscing elit.',
         },
         {
           id: 'mangonada',
-          name: 'Lorem Ipsum Three',
+          name: 'MANGONADA',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
           link: '/products/mangonada',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
           description: 'Sed sit amet facilisis urna.',
         },
         {
           id: 'disney-couple',
-          name: 'Lorem Ipsum Four',
+          name: 'DISNEYLAND COUPLE',
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
           link: '/products/disney-couple',
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
           description: 'Praesent ac gravida libero.',
         },
         // ... more products
