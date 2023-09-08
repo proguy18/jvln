@@ -9,11 +9,14 @@
             <div
               class="relative w-full max-w-md overflow-hidden rounded-md shadow-lg h-[500px] mb-4"
             >
-              <img
-                :src="selectedImage"
-                alt="Selected Product Image"
-                class="object-cover w-full h-full"
-              />
+              <transition :name="slideDirection">
+                <img
+                  :key="selectedImage"
+                  :src="selectedImage"
+                  alt="Selected Product Image"
+                  class="object-cover w-full h-full slide-image"
+                />
+              </transition>
               <div
                 @click="prevImage"
                 class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 left-4 bg-opacity-40 backdrop-blur-md"
@@ -37,10 +40,6 @@
                 />
               </div>
             </div>
-            <ProductGallery
-              :images="product.images"
-              @selectImage="updateSelectedImage"
-            />
           </div>
           <div class="flex flex-col justify-between space-y-4 md:w-1/2 h-128">
             <div>
@@ -56,80 +55,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="h-screen scroll-snap-start">
-      <div class="container">
-        "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book. It has survived
-        not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with
-        the release of Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus PageMaker including
-        versions of Lorem Ipsum. Why do we use it? It is a long established fact
-        that a reader will be distracted by the readable content of a page when
-        looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using
-        'Content here, content here', making it look like readable English. Many
-        desktop publishing packages and web page editors now use Lorem Ipsum as
-        their default model text, and a search for 'lorem ipsum' will uncover
-        many web sites still in their infancy. Various versions have evolved
-        over the years, sometimes by accident, sometimes on purpose (injected
-        humour and the like). ""What is Lorem Ipsum? Lorem Ipsum is simply dummy
-        text of the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type specimen
-        book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software
-        like Aldus PageMaker including versions of Lorem Ipsum. Why do we use
-        it? It is a long established fact that a reader will be distracted by
-        the readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like). ""What is
-        Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard dummy
-        text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book. It has survived not only
-        five centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum. Why do we use it? It is a long established fact that a
-        reader will be distracted by the readable content of a page when looking
-        at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using
-        'Content here, content here', making it look like readable English. Many
-        desktop publishing packages and web page editors now use Lorem Ipsum as
-        their default model text, and a search for 'lorem ipsum' will uncover
-        many web sites still in their infancy. Various versions have evolved
-        over the years, sometimes by accident, sometimes on purpose (injected
-        humour and the like). ""What is Lorem Ipsum? Lorem Ipsum is simply dummy
-        text of the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type specimen
-        book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software
-        like Aldus PageMaker including versions of Lorem Ipsum. Why do we use
-        it? It is a long established fact that a reader will be distracted by
-        the readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like). "
       </div>
     </section>
     <section class="h-screen scroll-snap-start">
@@ -183,11 +108,35 @@
         </div>
       </div>
     </section>
+    <section class="h-screen scroll-snap-start">
+      <div
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
+      >
+        <div class="start-at-left col-span-full md:col-span-6 lg:col-span-8">
+          <BannerComponent
+            :mobile-image="banners[2].mobileImage"
+            :tablet-image="banners[2].tabletImage"
+            :laptop-image="banners[2].laptopImage"
+            :desktop-image="banners[2].desktopImage"
+            :default-image="banners[2].defaultImage"
+            :banners-link="banners[2].link"
+          />
+        </div>
+        <div
+          class="text-left start-at-bottom col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
+        >
+          <ContentComponent
+            :heading="product.finalStoryData.heading"
+            :description="product.finalStoryData.description"
+            content-class="custom-class-to-center-content"
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import ProductGallery from '~/components/ProductGallery.vue';
 import BannerComponent from '@/components/BannerComponent.vue';
 import ContentComponent from '@/components/ContentComponent.vue';
 
@@ -195,7 +144,6 @@ export default {
   components: {
     BannerComponent,
     ContentComponent,
-    ProductGallery,
   },
   asyncData({ params }) {
     const products = [
@@ -215,47 +163,47 @@ export default {
         banners: [
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8617_poprwz.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8617_poprwz.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8618_yvnv5q.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170422/IMG_8618_yvnv5q.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/logo_baberini_cl75qk.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/logo_baberini_cl75qk.png',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198045/logo_baberini_cl75qk.png',
             // link: '/#'
           },
         ],
@@ -279,210 +227,228 @@ export default {
         id: 'baberino',
         name: 'BABERINO',
         // type: 'Type 2',
-        description: 'Description for Product 2',
+        description: "Our unisex signature. Saffron and cedar's elegant dance.",
         images: [
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-2.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
         ],
         banners: [
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199359/ezgif.com-optimize_s2kqu3.gif',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199023/00112-5_wf3dnn.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694199023/00112-5_wf3dnn.png',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694199023/00112-5_wf3dnn.png',
+            // link: '/#'
+          },
+          {
+            image:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
+            mobileImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198038/logo_baberoni_nrruzr.png',
+            tabletImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198038/logo_baberoni_nrruzr.png',
+            laptopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
+            desktopImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
+            defaultImage:
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198038/logo_baberoni_nrruzr.png',
             // link: '/#'
           },
         ],
         storyData: {
-          heading: 'SYMPHONY OF NATURE',
+          heading: 'WHISPERS OF THE WILD',
           description:
-            "Dive into the heart of a rose garden where various varieties intertwine. Each lends its unique note, crafting a symphony of nature's finest roses. Just like our love, every detail is handcrafted, every note carefully chosen.",
+            'In the heart of a secluded forest, saffron and cedarwood intertwine in a mysterious dance of scents. Each aroma, though subtle, carries a hint of a deeper story, reminiscent of the hidden tales of our love. This candle, handcrafted by me, begins our fragrant journey.',
         },
+
         substoryData: {
-          heading: 'HANDCRAFTED DEVOTION',
+          heading: 'CRAFTED WITH CARE',
           description:
-            "Every Baberini candle is handcrafted, just like the moments we've shared. From the delicate whispers of budding petals to the robust fragrances of full blooms, each scent is a testament to the time and care I've poured into our journey together.",
+            "The Baberino candle isn't just an ordinary scent. It's a handcrafted testament to our shared moments, a delicate balance of love and devotion. With every whiff, remember the hands that molded it, especially for you.",
         },
+
         finalStoryData: {
-          heading: 'A FLAME OF LOVE',
+          heading: "LOVE'S LUMINESCENCE",
           description:
-            "The harmonious blend of the Baberini candle isn't just about roses. It's about a love that burns bright and true. Each flicker of the flame is a reminder of my unwavering love for you, handcrafted and designed with you at its heart.",
+            "Beyond the saffron and cedarwood, this candle holds a burning truth. It's not just a gift, but a radiant testament of my love for you. Every flicker is a heartbeat, every scent a cherished memory, all meticulously crafted with you at its very essence.",
         },
       },
       {
         id: 'disney-couple',
         name: 'DISNEYLAND COUPLE',
         // type: 'Type 1',
-        description: 'DISNEY DESCRIPTUON',
+        description: 'Magic in every flicker. Relive our favorite Disney show.',
         images: [
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8608_n3aghi.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8612_csqua3.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8611_tcc710.jpg',
         ],
         banners: [
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198044/logo_disneylandcouple_egeeds.png',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198044/logo_disneylandcouple_egeeds.png',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694198044/logo_disneylandcouple_egeeds.png',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198044/logo_disneylandcouple_egeeds.png',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198044/logo_disneylandcouple_egeeds.png',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198044/logo_disneylandcouple_egeeds.png',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8421_dxbdgt.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8421_dxbdgt.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8421_dxbdgt.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8421_dxbdgt.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8421_dxbdgt.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8421_dxbdgt.jpg',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8408_ho53tx.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8408_ho53tx.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694200135/IMG-8408_ho53tx.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8408_ho53tx.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8408_ho53tx.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694200135/IMG-8408_ho53tx.jpg',
             // link: '/#'
           },
         ],
         storyData: {
-          heading: 'SYMPHONY OF NATURE',
+          heading: 'MAGIC IN THE AIR',
           description:
-            "Dive into the heart of a rose garden where various varieties intertwine. Each lends its unique note, crafting a symphony of nature's finest roses. Just like our love, every detail is handcrafted, every note carefully chosen.",
+            'The enchanting aroma of blueberry pie wafts through the air, taking us back to that magical place where dreams come alive. Every handcrafted candle is a ticket to that unforgettable day at Disneyland, a day filled with laughter, joy, and shared memories.',
         },
+
         substoryData: {
-          heading: 'HANDCRAFTED DEVOTION',
+          heading: 'A JOURNEY HANDCRAFTED',
           description:
-            "Every Baberini candle is handcrafted, just like the moments we've shared. From the delicate whispers of budding petals to the robust fragrances of full blooms, each scent is a testament to the time and care I've poured into our journey together.",
+            "This isn't just a candle; it's a handcrafted portal to our favorite show, a reminder of the magic we felt and the adventures we embarked upon. With every light, we're transported back, hand in hand, to the heart of Disneyland.",
         },
+
         finalStoryData: {
-          heading: 'A FLAME OF LOVE',
+          heading: 'ILLUMINATED MEMORIES',
           description:
-            "The harmonious blend of the Baberini candle isn't just about roses. It's about a love that burns bright and true. Each flicker of the flame is a reminder of my unwavering love for you, handcrafted and designed with you at its heart.",
+            'Beyond the scent of blueberry pie, this candle is a glowing testament of our shared journey. Every flicker is a moment from that day, every aroma a piece of our story, all meticulously crafted to celebrate us.',
         },
       },
       {
         id: 'mangonada',
         name: 'MANGONADA',
         // type: 'Type 1',
-        description: 'mangonada description',
+        description: 'Tropical delight in a flame. Sweet mango serenades.',
         images: [
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
           'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample.jpg',
+          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694198982/00205-2757224066_d2poxt.png',
         ],
         banners: [
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8529_fejshc.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8529_fejshc.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8529_fejshc.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8529_fejshc.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8529_fejshc.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8529_fejshc.jpg',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8530_kh4gtj.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8530_kh4gtj.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170416/IMG_8530_kh4gtj.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8530_kh4gtj.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8530_kh4gtj.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170416/IMG_8530_kh4gtj.jpg',
             // link: '/#'
           },
           {
             image:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
             mobileImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170417/IMG_8556_lln21x.jpg',
             tabletImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1694170417/IMG_8556_lln21x.jpg',
             laptopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
             desktopImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
             defaultImage:
-              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+              'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170417/IMG_8556_lln21x.jpg',
             // link: '/#'
           },
         ],
         storyData: {
-          heading: 'SYMPHONY OF NATURE',
+          heading: 'TROPICAL WHISPERS',
           description:
-            "Dive into the heart of a rose garden where various varieties intertwine. Each lends its unique note, crafting a symphony of nature's finest roses. Just like our love, every detail is handcrafted, every note carefully chosen.",
+            "The tantalizing scent of mango chamoy fills the room, a hint of the exotic treat she's been longing for. This handcrafted candle is a promise, a reminder that even if the world doesn't offer what we desire, love finds a way to bring it closer.",
         },
+
         substoryData: {
-          heading: 'HANDCRAFTED DEVOTION',
+          heading: 'HANDCRAFTED CRAVINGS',
           description:
-            "Every Baberini candle is handcrafted, just like the moments we've shared. From the delicate whispers of budding petals to the robust fragrances of full blooms, each scent is a testament to the time and care I've poured into our journey together.",
+            "Every Mangonada candle is a labor of love, capturing the essence of her recent obsession. It's more than just a scent; it's a handcrafted journey of flavors and memories, a testament to the lengths love will go to fulfill a wish.",
         },
+
         finalStoryData: {
-          heading: 'A FLAME OF LOVE',
+          heading: 'FLAME OF FULFILLMENT',
           description:
-            "The harmonious blend of the Baberini candle isn't just about roses. It's about a love that burns bright and true. Each flicker of the flame is a reminder of my unwavering love for you, handcrafted and designed with you at its heart.",
+            "This isn't just about mango chamoy. It's about a burning desire, a wish, and the love that strives to make it come true. Every flicker is a step closer to her dream, every scent a reminder of my unwavering commitment to our shared passions.",
         },
       },
       // ... Add more products in the same format as above if needed ...
@@ -511,12 +477,17 @@ export default {
     },
     prevImage() {
       const currentIndex = this.product.images.indexOf(this.selectedImage);
+      this.slideDirection = 'slide-right';
       if (currentIndex > 0) {
         this.selectedImage = this.product.images[currentIndex - 1];
+      } else {
+        this.selectedImage =
+          this.product.images[this.product.images.length - 1];
       }
     },
     nextImage() {
       const currentIndex = this.product.images.indexOf(this.selectedImage);
+      this.slideDirection = 'slide-left';
       if (currentIndex < this.product.images.length - 1) {
         this.selectedImage = this.product.images[currentIndex + 1];
       } else {
@@ -526,7 +497,7 @@ export default {
     setupObserver() {
       const options = {
         root: null,
-        threshold: 1,
+        threshold: 0.5,
       };
 
       const observer = new IntersectionObserver((entries) => {
@@ -535,7 +506,7 @@ export default {
             `Element: ${entry.target.className}, Intersection Ratio: ${entry.intersectionRatio}`,
           );
 
-          if (entry.intersectionRatio === 1) {
+          if (entry.intersectionRatio > 0.5) {
             // Adjust this value as needed
             if (entry.target.classList.contains('start-at-left')) {
               entry.target.classList.add('slide-to-right');

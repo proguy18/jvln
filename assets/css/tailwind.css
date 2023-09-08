@@ -62,3 +62,40 @@
   transform: translateY(0);
   opacity: 100;
 }
+
+/* Slide left transition */
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: transform 0.5s, opacity 0.5s;
+}
+.slide-left-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.slide-left-leave-to /* .slide-left-leave-active in <2.1.8 */ {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Slide right transition */
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: transform 0.5s, opacity 0.5s;
+}
+.slide-right-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.slide-right-leave-to /* .slide-right-leave-active in <2.1.8 */ {
+  transform: translateX(100%);
+  opacity: 0;
+}
+/* Slide & Fade Transition */
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+  transform: translateX(100%);
+}
