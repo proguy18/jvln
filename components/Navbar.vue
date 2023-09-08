@@ -37,9 +37,9 @@
       </span>
       <!-- Dropdown Menu for Links -->
       <ul
-        class="absolute z-50 w-full px-10 pb-2 duration-200 ease-linear bg-gray-900"
+        class="absolute z-50 w-full px-10 pb-2 transition-transform duration-200 ease-linear transform bg-gray-900"
         style="top: 5.75rem"
-        :class="[open ? 'right-0' : 'right-[-100%]']"
+        :class="[open ? 'translate-x-0' : 'translate-x-full']"
       >
         <li v-for="(link, index) in Links" :key="index">
           <nuxt-link :to="link.link" class="text-xl text-white">
