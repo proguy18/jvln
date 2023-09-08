@@ -35,18 +35,15 @@
       <span class="text-4xl cursor-pointer" @click="MenuOpen()">
         <i :class="[open ? 'bi bi-x' : 'bi bi-list']"></i>
       </span>
-      <!-- Dropdown Menu for Links -->
-      <ul
-        class="absolute z-50 w-full px-10 pb-2 duration-200 ease-linear bg-gray-900"
-        style="top: 5.75rem"
-        :class="[open ? 'right-0' : 'right-[-100%]']"
-      >
-        <li v-for="(link, index) in Links" :key="index">
-          <nuxt-link :to="link.link" class="text-xl text-white">
-            {{ link.name }}
-          </nuxt-link>
-        </li>
-      </ul>
+      <div class="relative overflow-hidden">
+        <ul
+          class="absolute z-50 w-full px-10 pb-2 duration-200 ease-linear bg-gray-900"
+          style="top: 5.75rem"
+          :class="[open ? 'right-0' : 'right-[-100%]']"
+        >
+          <!-- your list items here -->
+        </ul>
+      </div>
     </div>
   </div>
 </template>
