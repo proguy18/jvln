@@ -50,15 +50,15 @@
 /* Animated states */
 .slide-to-right {
   transform: translateX(0);
-  opacity: 30;
+  opacity: 100;
 }
 
 .slide-to-left {
   transform: translateX(0);
-  opacity: 30;
+  opacity: 100;
 }
 
 .ease-in {
   transform: translateY(0);
-  opacity: 30;
+  opacity: 100;
 }
