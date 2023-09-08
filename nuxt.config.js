@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'secret',
+    title: 'I LOVE MY BABERINI',
     htmlAttrs: {
       lang: 'en',
     },
@@ -17,7 +17,28 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '96x96',
+        href: '/favicon-96x96.png',
+      },
+      { rel: 'apple-icon', sizes: '180x180', href: '/apple-icon-180x180.png' },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        href: '/android-icon-192x192.png',
+      },
+      { rel: 'manifest', href: '/manifest.json' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
