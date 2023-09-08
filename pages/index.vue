@@ -159,9 +159,9 @@ export default {
         // link: '/#'
       },
       introductionData: {
-        heading: 'THE GOOD, THE BEAUTIFUL, THE USEFUL',
+        heading: 'OUR LOVE STORY',
         description:
-          'This is the philosophy of La Droguerie, a collection of household products designed to elevate the everyday in a sustainable way.',
+          "A journey of love, laughter, and countless memories. Celebrating the special moments we've shared.",
         ctaText: 'DISCOVER MORE',
         // ctaLink: '/your-cta-link'
       },
@@ -173,9 +173,10 @@ export default {
       },
       aboutUsData: {
         heading: 'A PASSION FOR LOVE',
-        description: 'Dolce dest decorum est Lorem Ipsum quick brown fox',
-        ctaText: 'LEARN MORE',
-        // ctaLink: '#'
+        description:
+          'Like a candle, our love lights up the darkest moments, bringing warmth and joy to every day.',
+        ctaText: 'READ OUR STORY',
+        ctaLink: '/aboutus',
       },
       products: [
         // Add your product details here

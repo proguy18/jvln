@@ -7,11 +7,14 @@
     <Nuxt />
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-gray-50">
+      <!-- Unified footer color -->
       <!-- Newsletter Signup -->
-      <section class="p-6 my-12 bg-gray-200 rounded-md">
-        <h2 class="mb-4 text-2xl font-bold">Lorem Ipsum Newsletter</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <section class="p-6 my-12">
+        <h2 class="mb-4 text-2xl font-bold text-primary">
+          Join Our Newsletter
+        </h2>
+        <p>Stay updated with our latest news and stories.</p>
         <form class="mt-4">
           <input
             type="email"
@@ -25,17 +28,44 @@
       </section>
 
       <!-- Contact Information -->
-      <section class="my-12">
+      <section class="p-6 my-12">
         <h2 class="mb-4 text-2xl font-bold font-mplus1p text-primary">
           FOLLOW US
         </h2>
-        <p text-primary>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          facilisis urna.
+        <div class="flex space-x-4">
+          <!-- FontAwesome icons for social media -->
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-600 hover:text-blue-800"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-red-600 hover:text-red-800"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- Add more icons as needed -->
+        </div>
+        <p class="mt-4 text-primary">
+          Connect with us on our social media platforms for the latest updates.
         </p>
       </section>
 
-      <!-- Any other footer content can go here -->
+      <!-- If there's another container below, you can adjust or remove it here. If you want to keep it, ensure it has the same background color as the rest of the footer. -->
     </footer>
   </div>
 </template>
