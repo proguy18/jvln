@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 text-gray-100 py-3.5 px-6 shadow">
+  <div class="bg-gray-900 text-gray-100 py-3.5 shadow">
     <!-- Desktop View -->
     <div class="hidden md:flex md:flex-col md:items-center md:justify-center">
       <!-- First Row: Home Button -->
@@ -30,20 +30,23 @@
       <!-- Spacer for left side to balance the menu icon on the right -->
       <div class="w-10 text-4xl"></div>
       <!-- Home Button -->
-      <HomeButton />
+      <HomeButton class="pl-6" />
       <!-- Menu Toggle Icon -->
-      <span class="text-4xl cursor-pointer" @click="MenuOpen()">
+      <span class="pr-6 text-4xl cursor-pointer" @click="MenuOpen()">
         <i :class="[open ? 'bi bi-x' : 'bi bi-list']"></i>
       </span>
-      <div class="relative overflow-hidden">
-        <ul
-          class="absolute z-50 w-full px-10 pb-2 duration-200 ease-linear bg-gray-900"
-          style="top: 5.75rem"
-          :class="[open ? 'right-0' : 'right-[-100%]']"
-        >
-          <!-- your list items here -->
-        </ul>
-      </div>
+      <!-- Dropdown Menu for Links -->
+      <ul
+        class="absolute z-50 w-screen px-10 pb-2 transition-transform duration-200 ease-linear transform bg-gray-900"
+        style="top: 5.75rem"
+        :class="{ 'translate-x-0': open, 'translate-x-full': !open }"
+      >
+        <li v-for="(link, index) in Links" :key="index">
+          <nuxt-link :to="link.link" class="text-xl text-white">
+            {{ link.name }}
+          </nuxt-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
