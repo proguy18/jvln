@@ -13,4 +13,4 @@ library.add(faFacebookF, faTwitter, faInstagram);
 config.autoAddCss = false;
 
 // Register the FontAwesomeIcon component globally
-Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component("FontAwesomeIcon", FontAwesomeIcon);

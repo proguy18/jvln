@@ -18,9 +18,9 @@
                 />
               </transition>
               <div
-                @click="prevImage"
                 class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 left-4 bg-opacity-40 backdrop-blur-md"
                 style="user-select: none"
+                @click="prevImage"
               >
                 <img
                   src="~@/assets/svgs/arrow-left.svg"
@@ -29,9 +29,9 @@
                 />
               </div>
               <div
-                @click="nextImage"
                 class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 right-4 bg-opacity-40 backdrop-blur-md"
                 style="user-select: none"
+                @click="nextImage"
               >
                 <img
                   src="~@/assets/svgs/arrow-right.svg"
@@ -500,10 +500,6 @@ export default {
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          console.log(
-            `Element: ${entry.target.className}, Intersection Ratio: ${entry.intersectionRatio}`,
-          );
-
           if (entry.intersectionRatio > 0.5) {
             // Adjust this value as needed
             if (entry.target.classList.contains("start-at-left")) {

@@ -3,8 +3,8 @@
     <div
       v-for="image in images"
       :key="image"
-      @click="selectImage(image)"
       class="cursor-pointer"
+      @click="selectImage(image)"
     >
       <img
         :src="image"

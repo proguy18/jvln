@@ -93,5 +93,6 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    "vue/require-default-prop": "off",
   },
 };
