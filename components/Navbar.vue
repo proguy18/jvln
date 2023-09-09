@@ -65,7 +65,7 @@ export default {
     const hoveredIndices = ref([]);
     const Links = [
       { name: 'PRODUCTS', link: '/products' },
-      { name: 'ABOUT US', link: '#' },
+      { name: 'ABOUT US', link: '/about-us' },
       { name: 'CONTACT US', link: '#' },
     ];
 

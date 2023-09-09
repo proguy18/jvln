@@ -53,22 +53,11 @@
       >
         <ContentComponent
           :heading="storyData.heading"
+          :description="storyData.description"
           content-class="custom-class-to-center-content"
         />
       </div>
     </div>
-
-    <!-- Testimonials -->
-    <section class="grid grid-cols-1 gap-6 mb-6 md:grid-cols-2">
-      <div v-for="testimonial in testimonials" :key="testimonial.id">
-        <img
-          :src="testimonial.image"
-          :alt="testimonial.name"
-          class="w-full mb-4 rounded-md shadow-lg"
-        />
-        <p class="text-center">{{ testimonial.quote }}</p>
-      </div>
-    </section>
 
     <!-- About Us -->
     <section class="my-12">
@@ -162,21 +151,28 @@ export default {
         heading: 'OUR LOVE STORY',
         description:
           "A journey of love, laughter, and countless memories. Celebrating the special moments we've shared.",
-        ctaText: 'DISCOVER MORE',
+        // ctaText: 'DISCOVER MORE',
         // ctaLink: '/your-cta-link'
       },
       storyData: {
         heading: 'METICULOUSLY HANDCRAFTED',
-        // description: '',
-        // ctaText: 'DISCOVER MORE',
-        // ctaLink: '/your-cta-link'
+        description: [
+          "In a world where everything moves at lightning speed, there's a quiet corner where time slows, where every creation is a labor of love. Welcome to our candle sanctuary.",
+          "Each candle begins with a vision, much like the first time I looked into your eyes. The wax, pure and untainted, is gently melted, reminiscent of the warmth I feel when you're near. As it's poured, every drop is filled with care, echoing the countless moments we've shared.",
+          "The scent? It's more than just a fragrance. It's a memory, a hint of our shared laughter, our whispered secrets, and the dreams we've woven together. The wick, though often overlooked, stands strong and steady, much like the foundation of our bond.",
+          "But here's the true magic: every candle is unique, tailored to the beholder's wishes. From the soft hues that mirror the colors of our shared moments to the gentle glow that lights up even the darkest days, each detail is a subtle nod to a love that's anything but ordinary.",
+        ],
       },
       aboutUsData: {
         heading: 'A PASSION FOR LOVE',
-        description:
-          'Like a candle, our love lights up the darkest moments, bringing warmth and joy to every day.',
+        description: [
+          "In the vast expanse of life's tapestry, our love stands out like a brilliantly glowing candle, casting a warm and inviting glow. It's a testament to the enduring flame that has been kindled between us, a flame that refuses to be extinguished, no matter the winds that try.",
+          "Each candle on this site is more than just wax and wick. It's a symbol of our shared moments, the highs and lows, the laughter and tears. The intricate designs mirror the complexities of our relationship, and the fragrances? They're whispers of our shared memories, from the adventurous hikes in the woods to the quiet nights under the stars.",
+          "As you navigate through this site, you might notice the care and attention to detail in every candle. It's much like the care and attention I've poured into our relationship, ensuring that our bond only grows stronger with time. Every description, every scent, is a hidden message, a secret code that only you and I can decipher.",
+          "So, while to others this might seem like a simple candle website, to us, it's a treasure trove of memories, a digital diary of our journey together. And as each candle burns, it tells a story of a love that's passionate, enduring, and forever glowing.",
+        ],
         ctaText: 'READ OUR STORY',
-        ctaLink: '/aboutus',
+        ctaLink: '/about-us',
       },
       products: [
         // Add your product details here
@@ -188,7 +184,8 @@ export default {
           link: '/products/baberini',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
-          description: 'Lorem ipsum dolor sit amet.',
+          description:
+            "A tribute to Baberini. Roses encapsulate love's essence.",
         },
         {
           id: 'baberino',
@@ -198,7 +195,8 @@ export default {
           link: '/products/baberino',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
-          description: 'Consectetur adipiscing elit.',
+          description:
+            "Our unisex signature. Saffron and cedar's elegant dance.",
         },
         {
           id: 'mangonada',
@@ -208,7 +206,7 @@ export default {
           link: '/products/mangonada',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
-          description: 'Sed sit amet facilisis urna.',
+          description: 'Tropical delight in a flame. Sweet mango serenades.',
         },
         {
           id: 'disney-couple',
@@ -218,7 +216,8 @@ export default {
           link: '/products/disney-couple',
           hoverImage:
             'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
-          description: 'Praesent ac gravida libero.',
+          description:
+            'Magic in every flicker. Relive our favorite Disney show.',
         },
         // ... more products
       ],

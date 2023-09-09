@@ -4,9 +4,19 @@
     <h1 class="mb-6 text-4xl font-mplus1p text-primary">{{ heading }}</h1>
 
     <!-- Description with Lato font -->
-    <p v-if="description" class="mb-6 font-lato text-primary">
+    <!-- Check if description is a string -->
+    <p v-if="isStringDescription" class="mb-6 font-lato text-primary">
       {{ description }}
     </p>
+
+    <!-- Check if description is an array -->
+    <pre
+      v-else-if="isArrayDescription"
+      class="mb-6 whitespace-pre-line font-lato text-primary"
+    >
+  {{ description.join('\n\n') }}
+</pre
+    >
 
     <!-- CTA with Lato font -->
     <nuxt-link
@@ -23,7 +33,7 @@
 export default {
   props: {
     heading: String,
-    description: String,
+    description: [String, Array], // Allow both String and Array
     ctaText: String,
     ctaLink: {
       type: String,
@@ -32,6 +42,14 @@ export default {
     contentClass: {
       type: String,
       default: '',
+    },
+  },
+  computed: {
+    isStringDescription() {
+      return typeof this.description === 'string';
+    },
+    isArrayDescription() {
+      return Array.isArray(this.description);
     },
   },
 };

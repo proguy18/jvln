@@ -12,7 +12,7 @@
       <p class="mb-4 text-center text-onPrimary">{{ description }}</p>
     </div>
     <!-- Product Grid -->
-    <section class="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <section class="grid grid-cols-2 gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4">
       <MainProduct
         v-for="product in products"
         :key="product.id"
