@@ -45,9 +45,9 @@ export default {
         {
           id: 1,
           name: "Friend's Name",
-          message: 'Happy Birthday message...',
+          message: "Happy Birthday message...",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
           video: null,
         },
         // ... more testimonials

@@ -51,11 +51,11 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-import HomeButton from './HomeButton.vue';
+import { ref } from "vue";
+import HomeButton from "./HomeButton.vue";
 
 export default {
-  name: 'NavbarComponent',
+  name: "NavbarComponent",
   components: {
     HomeButton,
   },
@@ -65,9 +65,9 @@ export default {
     // const hoveredIndex = ref(-1); // -1 indicates no link is hovered
 
     const Links = [
-      { name: 'PRODUCTS', link: '/products' },
-      { name: 'OUR STORY', link: '/our-story' },
-      { name: 'TESTIMONIALS', link: '/testimonials' },
+      { name: "PRODUCTS", link: "/products" },
+      { name: "OUR STORY", link: "/our-story" },
+      { name: "TESTIMONIALS", link: "/testimonials" },
     ];
 
     function MenuOpen() {

@@ -141,10 +141,10 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
-import BannerComponent from '@/components/BannerComponent.vue';
-import ContentComponent from '@/components/ContentComponent.vue';
-import MainProduct from '@/components/MainProduct.vue';
+import Navbar from "@/components/Navbar.vue";
+import BannerComponent from "@/components/BannerComponent.vue";
+import ContentComponent from "@/components/ContentComponent.vue";
+import MainProduct from "@/components/MainProduct.vue";
 
 export default {
   components: {
@@ -157,70 +157,70 @@ export default {
     return {
       bannerData: {
         image:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg",
         mobileImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg",
         tabletImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1693301320/samples/animals/three-dogs.jpg",
         laptopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg",
         desktopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg",
         defaultImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301320/samples/animals/three-dogs.jpg",
         // link: '/#'
       },
       contentData: {
-        heading: 'THE GOOD, THE BEAUTIFUL, THE USEFUL',
+        heading: "THE GOOD, THE BEAUTIFUL, THE USEFUL",
         description:
-          'This is the philosophy of La Droguerie, a collection of household products designed to elevate the everyday in a sustainable way.',
-        ctaText: 'DISCOVER THE COLLECTION',
+          "This is the philosophy of La Droguerie, a collection of household products designed to elevate the everyday in a sustainable way.",
+        ctaText: "DISCOVER THE COLLECTION",
         // ctaLink: '/your-cta-link'
       },
       products: [
         // Add your product details here
         {
-          id: 'baberini',
-          name: 'Baberini',
+          id: "baberini",
+          name: "Baberini",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
-          link: '#',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg",
+          link: "#",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg",
           description:
             "A tribute to Baberini. Roses encapsulate love's essence.",
         },
         {
-          id: 'baberino',
-          name: 'baberino',
+          id: "baberino",
+          name: "baberino",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg',
-          link: '#',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-3.jpg",
+          link: "#",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg",
           description:
             "Our unisex signature. Saffron and cedar's elegant dance.",
         },
         {
-          id: 'mangonada',
-          name: 'Mangonada',
+          id: "mangonada",
+          name: "Mangonada",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg',
-          link: '#',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301347/cld-sample-2.jpg",
+          link: "#",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg',
-          description: 'Tropical delight in a flame. Sweet mango serenades.',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-4.jpg",
+          description: "Tropical delight in a flame. Sweet mango serenades.",
         },
         {
-          id: 'disney-couple',
-          name: 'Disneyland Couple',
+          id: "disney-couple",
+          name: "Disneyland Couple",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
-          link: '#',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg",
+          link: "#",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1693301348/cld-sample-5.jpg",
           description:
-            'Magic in every flicker. Relive our favorite Disney show.',
+            "Magic in every flicker. Relive our favorite Disney show.",
         },
         // ... more products
       ],

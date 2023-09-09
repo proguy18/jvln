@@ -91,9 +91,9 @@
   </main>
 </template>
 <script>
-import BannerComponent from '@/components/BannerComponent.vue';
-import ContentComponent from '@/components/ContentComponent.vue';
-import ProductShowcase from '@/components/ProductShowcase.vue';
+import BannerComponent from "@/components/BannerComponent.vue";
+import ContentComponent from "@/components/ContentComponent.vue";
+import ProductShowcase from "@/components/ProductShowcase.vue";
 export default {
   components: {
     BannerComponent,
@@ -104,58 +104,58 @@ export default {
     return {
       bannerData1: {
         image:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
         mobileImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
         tabletImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
         laptopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
         desktopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
         defaultImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170419/IMG_8608_n3aghi.jpg",
         // link: '/#'
       },
       bannerData2: {
         image:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg",
         mobileImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg",
         tabletImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg",
         laptopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg",
         desktopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg",
         defaultImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170417/IMG_8532_nqnazw.jpg",
         // link: '/#'
       },
       bannerData3: {
         image:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg",
         mobileImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg",
         tabletImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg",
         laptopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg",
         desktopImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg",
         defaultImage:
-          'https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg',
+          "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694170418/IMG_8604_cv03lx.jpg",
         // link: '/#'
       },
       introductionData: {
-        heading: 'OUR LOVE STORY',
+        heading: "OUR LOVE STORY",
         description:
           "A journey of love, laughter, and countless memories. Celebrating the special moments we've shared.",
         // ctaText: 'DISCOVER MORE',
         // ctaLink: '/your-cta-link'
       },
       storyData: {
-        heading: 'METICULOUSLY HANDCRAFTED',
+        heading: "METICULOUSLY HANDCRAFTED",
         description: [
           "In a world where everything moves at lightning speed, there's a quiet corner where time slows, where every creation is a labor of love. Welcome to our candle sanctuary.",
           "Each candle begins with a vision, much like the first time I looked into your eyes. The wax, pure and untainted, is gently melted, reminiscent of the warmth I feel when you're near. As it's poured, every drop is filled with care, echoing the countless moments we've shared.",
@@ -164,60 +164,60 @@ export default {
         ],
       },
       aboutUsData: {
-        heading: 'A PASSION FOR LOVE',
+        heading: "A PASSION FOR LOVE",
         description: [
           "In the vast expanse of life's tapestry, our love stands out like a brilliantly glowing candle, casting a warm and inviting glow. It's a testament to the enduring flame that has been kindled between us, a flame that refuses to be extinguished, no matter the winds that try.",
           "Each candle on this site is more than just wax and wick. It's a symbol of our shared moments, the highs and lows, the laughter and tears. The intricate designs mirror the complexities of our relationship, and the fragrances? They're whispers of our shared memories, from the adventurous hikes in the woods to the quiet nights under the stars.",
           "As you navigate through this site, you might notice the care and attention to detail in every candle. It's much like the care and attention I've poured into our relationship, ensuring that our bond only grows stronger with time. Every description, every scent, is a hidden message, a secret code that only you and I can decipher.",
           "So, while to others this might seem like a simple candle website, to us, it's a treasure trove of memories, a digital diary of our journey together. And as each candle burns, it tells a story of a love that's passionate, enduring, and forever glowing.",
         ],
-        ctaText: 'READ OUR STORY',
-        ctaLink: '/our-story',
+        ctaText: "READ OUR STORY",
+        ctaLink: "/our-story",
       },
       products: [
         // Add your product details here
         {
-          id: 'baberini',
-          name: 'BABERINI',
+          id: "baberini",
+          name: "BABERINI",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg',
-          link: '/products/baberini',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170427/IMG_8618_yvnv5q.jpg",
+          link: "/products/baberini",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8617_poprwz.jpg",
           description:
             "A tribute to Baberini. Roses encapsulate love's essence.",
         },
         {
-          id: 'baberino',
-          name: 'BABERINO',
+          id: "baberino",
+          name: "BABERINO",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg',
-          link: '/products/baberino',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170422/IMG_8616_awiagk.jpg",
+          link: "/products/baberino",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8615_if2apk.jpg",
           description:
             "Our unisex signature. Saffron and cedar's elegant dance.",
         },
         {
-          id: 'mangonada',
-          name: 'MANGONADA',
+          id: "mangonada",
+          name: "MANGONADA",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg',
-          link: '/products/mangonada',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170421/IMG_8614_gvdsdr.jpg",
+          link: "/products/mangonada",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg',
-          description: 'Tropical delight in a flame. Sweet mango serenades.',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170420/IMG_8613_wrhkw9.jpg",
+          description: "Tropical delight in a flame. Sweet mango serenades.",
         },
         {
-          id: 'disney-couple',
-          name: 'DISNEYLAND COUPLE',
+          id: "disney-couple",
+          name: "DISNEYLAND COUPLE",
           image:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg',
-          link: '/products/disney-couple',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170419/IMG_8607_kgvswr.jpg",
+          link: "/products/disney-couple",
           hoverImage:
-            'https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg',
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/v1694170418/IMG_8606_i8kx4t.jpg",
           description:
-            'Magic in every flicker. Relive our favorite Disney show.',
+            "Magic in every flicker. Relive our favorite Disney show.",
         },
         // ... more products
       ],

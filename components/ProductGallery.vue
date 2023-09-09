@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     selectImage(image) {
-      this.$emit('selectImage', image);
+      this.$emit("selectImage", image);
     },
   },
 };

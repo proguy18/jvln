@@ -14,7 +14,7 @@
       v-else-if="isArrayDescription"
       class="mb-6 whitespace-pre-line font-lato text-primary"
     >
-  {{ description.join('\n\n') }}
+  {{ description.join("\n\n") }}
 </pre
     >
 
@@ -37,16 +37,16 @@ export default {
     ctaText: String,
     ctaLink: {
       type: String,
-      default: '#',
+      default: "#",
     },
     contentClass: {
       type: String,
-      default: '',
+      default: "",
     },
   },
   computed: {
     isStringDescription() {
-      return typeof this.description === 'string';
+      return typeof this.description === "string";
     },
     isArrayDescription() {
       return Array.isArray(this.description);

@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import { library, config } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import Vue from "vue";
+import { library, config } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faFacebookF,
   faTwitter,
   faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 library.add(faFacebookF, faTwitter, faInstagram);
 
@@ -13,4 +13,4 @@ library.add(faFacebookF, faTwitter, faInstagram);
 config.autoAddCss = false;
 
 // Register the FontAwesomeIcon component globally
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component("font-awesome-icon", FontAwesomeIcon);

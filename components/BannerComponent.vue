@@ -33,7 +33,7 @@ export default {
     defaultImage: String,
     bannerLink: {
       type: String,
-      default: '',
+      default: "",
     },
   },
 };

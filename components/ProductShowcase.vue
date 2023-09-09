@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import MainProduct from '@/components/MainProduct.vue';
+import MainProduct from "@/components/MainProduct.vue";
 
 export default {
   components: {
@@ -36,11 +36,11 @@ export default {
     },
     title: {
       type: String,
-      default: '',
+      default: "",
     },
     description: {
       type: String,
-      default: '',
+      default: "",
     },
   },
 };
