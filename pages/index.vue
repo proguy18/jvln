@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <!-- About Us -->
+    <!-- Our Story -->
     <section class="my-12">
       <div
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
@@ -172,7 +172,7 @@ export default {
           "So, while to others this might seem like a simple candle website, to us, it's a treasure trove of memories, a digital diary of our journey together. And as each candle burns, it tells a story of a love that's passionate, enduring, and forever glowing.",
         ],
         ctaText: 'READ OUR STORY',
-        ctaLink: '/about-us',
+        ctaLink: '/our-story',
       },
       products: [
         // Add your product details here

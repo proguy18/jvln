@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <!-- About Us Section -->
+    <!-- Our Story Section -->
     <section class="my-12">
       <div
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <!-- About Us Section (Repeat) -->
+    <!-- Our Story Section (Repeat) -->
     <section class="my-12">
       <div
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"

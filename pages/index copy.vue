@@ -69,7 +69,7 @@
           <p class="text-center">{{ testimonial.quote }}</p>
         </div>
       </section>
-      <!-- About Us -->
+      <!-- Our Story -->
       <section class="my-12">
         <h2 class="mb-4 text-2xl font-bold">About JVLN Lumière</h2>
         <p>
