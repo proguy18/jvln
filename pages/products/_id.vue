@@ -1,43 +1,36 @@
 <template>
   <div class="container p-4 mx-auto">
-    <section class="h-screen scroll-snap-start">
+    <section class="h-screen">
       <div class="px-4 mx-auto mt-5">
         <div
-          class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4"
-        >
+          class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
           <div class="relative space-y-4 md:w-1/2">
             <div
-              class="relative w-full max-w-md overflow-hidden rounded-md shadow-lg h-[500px] mb-4"
-            >
+              class="relative w-full max-w-md overflow-hidden rounded-md shadow-lg h-[500px] mb-4">
               <transition :name="slideDirection">
                 <img
                   :key="selectedImage"
                   :src="selectedImage"
                   alt="Selected Product Image"
-                  class="object-cover w-full h-full slide-image"
-                />
+                  class="object-cover w-full h-full slide-image" />
               </transition>
               <div
                 class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 left-4 bg-opacity-40 backdrop-blur-md"
                 style="user-select: none"
-                @click="prevImage"
-              >
+                @click="prevImage">
                 <img
                   src="~@/assets/svgs/arrow-left.svg"
                   alt="Left Arrow"
-                  class="w-full h-full"
-                />
+                  class="w-full h-full" />
               </div>
               <div
                 class="absolute w-8 h-8 p-2 transform -translate-y-1/2 bg-white rounded-full cursor-pointer top-1/2 right-4 bg-opacity-40 backdrop-blur-md"
                 style="user-select: none"
-                @click="nextImage"
-              >
+                @click="nextImage">
                 <img
                   src="~@/assets/svgs/arrow-right.svg"
                   alt="Right Arrow"
-                  class="w-full h-full"
-                />
+                  class="w-full h-full" />
               </div>
             </div>
           </div>
@@ -57,10 +50,9 @@
         </div>
       </div>
     </section>
-    <section class="h-screen scroll-snap-start">
+    <section class="h-screen">
       <div
-        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-      >
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8">
         <div class="start-at-left col-span-full md:col-span-6 lg:col-span-8">
           <BannerComponent
             :mobile-image="banners[0].mobileImage"
@@ -68,32 +60,26 @@
             :laptop-image="banners[0].laptopImage"
             :desktop-image="banners[0].desktopImage"
             :default-image="banners[0].defaultImage"
-            :banners-link="banners[0].link"
-          />
+            :banners-link="banners[0].link" />
         </div>
         <div
-          class="text-left start-at-bottom col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
-        >
+          class="text-left start-at-bottom col-span-full md:col-span-6 lg:col-span-4 col-content px-section">
           <ContentComponent
             :heading="product.storyData.heading"
             :description="product.storyData.description"
-            content-class="custom-class-to-center-content"
-          />
+            content-class="custom-class-to-center-content" />
         </div>
       </div>
     </section>
 
     <section class="h-screen my-12">
       <div
-        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-      >
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8">
         <div
-          class="text-left start-at-bottom md:col-span-3 lg:col-span-4 col-content px-section"
-        >
+          class="text-left start-at-bottom md:col-span-3 lg:col-span-4 col-content px-section">
           <ContentComponent
             :heading="product.substoryData.heading"
-            :description="product.substoryData.description"
-          />
+            :description="product.substoryData.description" />
         </div>
         <!-- Here, you should use the first banner from the banners array or define another data property for this banner -->
         <div class="start-at-right md:col-span-3 lg:col-span-8">
@@ -103,15 +89,13 @@
             :laptop-image="banners[1].laptopImage"
             :desktop-image="banners[1].desktopImage"
             :default-image="banners[1].defaultImage"
-            :banner-link="banners[1].link"
-          />
+            :banner-link="banners[1].link" />
         </div>
       </div>
     </section>
-    <section class="h-screen scroll-snap-start">
+    <section class="h-screen">
       <div
-        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-      >
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8">
         <div class="start-at-left col-span-full md:col-span-6 lg:col-span-8">
           <BannerComponent
             :mobile-image="banners[2].mobileImage"
@@ -119,17 +103,14 @@
             :laptop-image="banners[2].laptopImage"
             :desktop-image="banners[2].desktopImage"
             :default-image="banners[2].defaultImage"
-            :banners-link="banners[2].link"
-          />
+            :banners-link="banners[2].link" />
         </div>
         <div
-          class="text-left start-at-bottom col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
-        >
+          class="text-left start-at-bottom col-span-full md:col-span-6 lg:col-span-4 col-content px-section">
           <ContentComponent
             :heading="product.finalStoryData.heading"
             :description="product.finalStoryData.description"
-            content-class="custom-class-to-center-content"
-          />
+            content-class="custom-class-to-center-content" />
         </div>
       </div>
     </section>

@@ -5,7 +5,17 @@
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 body {
-  @apply overflow-x-hidden;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  flex-flow: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 @font-face {
@@ -102,4 +112,9 @@ body {
 .slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active in <2.1.8 */ {
   opacity: 0;
   transform: translateX(100%);
+}
+
+.hero-snap-section {
+  scroll-snap-align: start;
+  height: 100vh;
 }

@@ -3,8 +3,7 @@
   <main class="container p-4 mx-auto">
     <!-- First Hero Section -->
     <div
-      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-    >
+      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8 hero-snap-section">
       <!-- Banner/Image -->
       <div class="col-span-full md:col-span-6 lg:col-span-8">
         <BannerComponent
@@ -13,36 +12,30 @@
           :laptop-image="bannerData1.laptopImage"
           :desktop-image="bannerData1.desktopImage"
           :default-image="bannerData1.defaultImage"
-          :banner-link="bannerData1.link"
-        />
+          :banner-link="bannerData1.link" />
       </div>
       <!-- Content -->
       <div
-        class="text-left col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
-      >
+        class="text-left col-span-full md:col-span-6 lg:col-span-4 col-content px-section">
         <ContentComponent
           :heading="storyData1.heading"
           :description="storyData1.description"
-          content-class="custom-class-to-center-content"
-        />
+          content-class="custom-class-to-center-content" />
       </div>
     </div>
 
     <!-- Our Story Section -->
     <section class="my-12">
       <div
-        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-      >
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8 hero-snap-section">
         <!-- Content -->
         <div
-          class="text-left md:col-span-3 lg:col-span-4 col-content px-section"
-        >
+          class="text-left md:col-span-3 lg:col-span-4 col-content px-section">
           <ContentComponent
             :heading="storyData2.heading"
             :description="storyData2.description"
             :cta-text="storyData2.ctaText"
-            :cta-link="storyData2.ctaLink"
-          />
+            :cta-link="storyData2.ctaLink" />
         </div>
         <!-- Banner/Image -->
         <div class="md:col-span-3 lg:col-span-8">
@@ -52,16 +45,14 @@
             :laptop-image="bannerData2.laptopImage"
             :desktop-image="bannerData2.desktopImage"
             :default-image="bannerData2.defaultImage"
-            :banner-link="bannerData2.link"
-          />
+            :banner-link="bannerData2.link" />
         </div>
       </div>
     </section>
 
     <!-- Second Hero Section (Repeat of First) -->
     <div
-      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-    >
+      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8 hero-snap-section">
       <!-- Banner/Image -->
       <div class="col-span-full md:col-span-6 lg:col-span-8">
         <BannerComponent
@@ -70,37 +61,31 @@
           :laptop-image="bannerData3.laptopImage"
           :desktop-image="bannerData3.desktopImage"
           :default-image="bannerData3.defaultImage"
-          :banner-link="bannerData3.link"
-        />
+          :banner-link="bannerData3.link" />
       </div>
       <!-- Content -->
       <div
-        class="text-left col-span-full md:col-span-6 lg:col-span-4 col-content px-section"
-      >
+        class="text-left col-span-full md:col-span-6 lg:col-span-4 col-content px-section">
         <ContentComponent
           :heading="storyData3.heading"
           :description="storyData3.description"
           :cta-text="storyData3.ctaText"
-          :cta-link="storyData3.ctaLink"
-        />
+          :cta-link="storyData3.ctaLink" />
       </div>
     </div>
 
     <!-- Our Story Section (Repeat) -->
     <section class="my-12">
       <div
-        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
-      >
+        class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8 hero-snap-section">
         <!-- Content -->
         <div
-          class="text-left md:col-span-3 lg:col-span-4 col-content px-section"
-        >
+          class="text-left md:col-span-3 lg:col-span-4 col-content px-section">
           <ContentComponent
             :heading="storyData4.heading"
             :description="storyData4.description"
             :cta-text="storyData4.ctaText"
-            :cta-link="storyData4.ctaLink"
-          />
+            :cta-link="storyData4.ctaLink" />
         </div>
         <!-- Banner/Image -->
         <div class="md:col-span-3 lg:col-span-8">
@@ -110,8 +95,7 @@
             :laptop-image="bannerData4.laptopImage"
             :desktop-image="bannerData4.desktopImage"
             :default-image="bannerData4.defaultImage"
-            :banner-link="bannerData4.link"
-          />
+            :banner-link="bannerData4.link" />
         </div>
       </div>
     </section>
