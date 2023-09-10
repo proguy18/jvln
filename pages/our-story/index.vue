@@ -3,7 +3,7 @@
   <main class="container p-4 mx-auto">
     <!-- First Hero Section -->
     <div
-      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
+      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 lg:h-screen md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
     >
       <!-- Banner/Image -->
       <div class="col-span-full md:col-span-6 lg:col-span-8">
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Our Story Section -->
-    <section class="my-12">
+    <section class="my-12 lg:h-screen">
       <div
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
       >
@@ -60,7 +60,7 @@
 
     <!-- Second Hero Section (Repeat of First) -->
     <div
-      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
+      class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 lg:h-screen md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
     >
       <!-- Banner/Image -->
       <div class="col-span-full md:col-span-6 lg:col-span-8">
@@ -87,7 +87,7 @@
     </div>
 
     <!-- Our Story Section (Repeat) -->
-    <section class="my-12">
+    <section class="my-12 lg:h-screen">
       <div
         class="container flex flex-col items-center gap-4 px-4 pt-4 mx-auto mt-4 md:flex-row md:grid md:grid-cols-6 lg:grid-cols-12 md:px-8"
       >

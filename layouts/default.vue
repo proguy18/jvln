@@ -12,7 +12,7 @@
       <!-- Newsletter Signup -->
       <section class="p-6 my-12">
         <h2 class="mb-4 text-2xl font-bold text-primary">
-          Join Our Newsletter
+          JOIN OUR NEWSLETTER
         </h2>
         <p class="text-primary">
           Stay updated with our latest news and stories.
