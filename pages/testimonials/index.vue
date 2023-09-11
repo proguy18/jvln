@@ -174,7 +174,7 @@
             "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694447491/version_2_hzehew.png",
           // link: '/#'
         },
-        bannerData3: {
+        bannerData4: {
           image:
             "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694447491/IMG_8646_vyuaqc.jpg",
           mobileImage:
