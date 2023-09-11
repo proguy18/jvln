@@ -67,7 +67,6 @@ export default {
     const Links = [
       { name: "PRODUCTS", link: "/products" },
       { name: "OUR STORY", link: "/our-story" },
-      { name: "TESTIMONIALS", link: "/testimonials" },
     ];
 
     function MenuOpen() {
