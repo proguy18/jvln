@@ -145,17 +145,17 @@
         },
         bannerData2: {
           image:
-            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694447491/IMG_8645_lkw1d7.jpg",
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb/v1694447491/IMG_8645_lkw1d7.jpg",
           mobileImage:
-            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694447491/IMG_8645_lkw1d7.jpg",
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb/v1694447491/IMG_8645_lkw1d7.jpg",
           tabletImage:
-            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb,g_auto/v1694447491/IMG_8645_lkw1d7.jpg",
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_300,h_400,c_thumb/v1694447491/IMG_8645_lkw1d7.jpg",
           laptopImage:
-            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694447491/IMG_8645_lkw1d7.jpg",
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb/v1694447491/IMG_8645_lkw1d7.jpg",
           desktopImage:
-            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694447491/IMG_8645_lkw1d7.jpg",
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb/v1694447491/IMG_8645_lkw1d7.jpg",
           defaultImage:
-            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb,g_auto/v1694447491/IMG_8645_lkw1d7.jpg",
+            "https://res.cloudinary.com/dwgnjyezw/image/upload/e_improve,w_2700,h_1800,c_thumb/v1694447491/IMG_8645_lkw1d7.jpg",
           // link: '/#'
         },
     
